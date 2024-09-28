@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import { useMenuContext } from '../../../context/menu';
@@ -18,11 +18,16 @@ import {
 } from './styles';
 
 const transition = {
-  duration: 0.45,
+  duration: 1,
   ease: [0.4, 0, 0.2, 1],
 };
 
+const words = ["nexAR", "nexNet", "nexAi"];
+
 const FeaturedProject = () => {
+  const [currentWord, setCurrentWord] = useState("");
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
   const controlsInfo = useAnimation();
   const controlsArrow = useAnimation();
   const theme = useStyledTheme();
@@ -37,37 +42,62 @@ const FeaturedProject = () => {
     ({ breakpoints }) => `(max-width:${breakpoints.sizes.tablet}px)`,
   );
 
-  const handleMouseEnter = React.useCallback(() => {
+  useEffect(() => {
+    const typingEffect = () => {
+      if (isTyping) {
+        setCurrentWord((prev) => {
+          const nextCharIndex = prev.length < words[wordIndex].length 
+            ? prev.length + 1 
+            : prev.length;
+          return words[wordIndex].slice(0, nextCharIndex);
+        });
+      } else {
+        setCurrentWord((prev) => prev.slice(0, -1));
+      }
+    };
+
+    const timeout = setTimeout(() => {
+      if (isTyping) {
+        if (currentWord.length === words[wordIndex].length) {
+          setIsTyping(false);
+          setTimeout(() => setIsTyping(true), 1000); // Wait before starting to clear
+        }
+      } else {
+        if (currentWord.length === 0) {
+          setWordIndex((prev) => (prev + 1) % words.length);
+          setIsTyping(true);
+        }
+      }
+      typingEffect();
+    }, isTyping ? 150 : 100);
+
+    return () => clearTimeout(timeout);
+  }, [currentWord, isTyping, wordIndex]);
+
+  const handleMouseEnter = () => {
     addCursorBorder();
     addCursorColor(theme.text);
-  }, [addCursorColor, addCursorBorder, theme.text]);
+  };
 
-  const handleMouseLeave = React.useCallback(async () => {
+  const handleMouseLeave = () => {
     if (isMenuOpen) return;
-
     removeCursorBorder();
     resetCursorColor();
-  }, [removeCursorBorder, resetCursorColor, isMenuOpen]);
+  };
 
-  const handleAnchorHoverStart = React.useCallback(() => {
+  const handleAnchorHoverStart = () => {
     addCursorBorder();
-
-    // animate controls
     controlsInfo.start({ opacity: 1 });
     controlsArrow.start({ x: 0 });
-  }, [addCursorBorder, controlsInfo, controlsArrow]);
+  };
 
-  const handleAnchorHoverEnd = React.useCallback(() => {
+  const handleAnchorHoverEnd = () => {
     removeCursorBorder();
-
-    // animate controls
     controlsInfo.start({ opacity: 0 });
     controlsArrow.start({ x: isTabletView ? -25.19 : -33 });
-  }, [removeCursorBorder, controlsInfo, controlsArrow, isTabletView]);
+  };
 
-  React.useEffect(() => {
-    // animate arrow programmatically because initial prop was not working properly.
-    // I probably did something wrong :P
+  useEffect(() => {
     controlsArrow.start({ x: isTabletView ? -25.19 : -33 });
   }, [controlsArrow, isTabletView]);
 
@@ -81,15 +111,15 @@ const FeaturedProject = () => {
               onHoverEnd={handleAnchorHoverEnd}
             >
               <ProjectInfo>
-                <h3>innovate</h3>
+                <h3>{currentWord}</h3>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={controlsInfo}
                   transition={transition}
                   className="project-info"
                 >
-                  <h4>elevate</h4>
-                  <h4>dominate</h4>
+                  <h4>Augmented Reality</h4>
+                  <h4>003</h4>
                 </motion.div>
                 <ProjectTitle>
                   NOT <br /> HUMBLE
