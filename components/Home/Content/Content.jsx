@@ -8,11 +8,10 @@ const Content = () => {
       <ContentSection>
         <TextWrapper>
           <Text>
-            Great stories don’t just happen—
+          Innovation doesn’t simply emerge—
             <br />
-            they need to be uncovered. And we dig deep to discover the great
-            stories that lie just below the surface. Dirt under our fingernails
-            and all.
+            it’s cultivated. We sift through the layers of the ordinary to unearth 
+            extraordinary ideas, embracing the grit and grind along the way.
           </Text>
         </TextWrapper>
       </ContentSection>
