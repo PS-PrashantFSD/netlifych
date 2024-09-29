@@ -13,7 +13,7 @@ export const Button = styled.button`
   &::after {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 80%;
     right: 20px;
     width: 35px;
     height: 7px;
