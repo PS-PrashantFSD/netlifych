@@ -1,13 +1,15 @@
 import React from 'react';
 import useCursorStyle from '../../hooks/useCursorStyle';
-import { Instagram, Facebook, Vimeo } from '../Icons';
+import { Instagram, Facebook, Youtube, Twitter, Linkedin } from '../Icons';
 import StickyCursor from '../StickyCursor';
 import { Container, Link } from './styles';
 
 const medias = [
-  { component: Instagram, url: 'https://www.instagram.com/furrowstudio/' },
-  { component: Facebook, url: 'https://www.facebook.com/furrowstudio/' },
-  { component: Vimeo, url: 'https://vimeo.com/furrow' },
+  { component: Instagram, url: 'instagram.com/_luminexa/' },
+  { component: Facebook, url: 'https://www.facebook.com/arluminexa/' },
+  { component: Youtube, url: 'https://youtube.com' },
+  { component: Twitter, url: 'https://twitter.com/_luminexa'},
+  { component: Linkedin, url: 'https://linkedin.com/company/luminexa-technology'},
 ];
 
 const SocialMedia = props => {
