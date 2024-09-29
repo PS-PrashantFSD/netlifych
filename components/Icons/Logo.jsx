@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 const LogoContainer = styled.div`
   position: relative; /* Ensure positioning context */
-  top: 0px;         /* Adjust as needed */
-  right: 28px;  /* Adjust as needed */
+        /* Adjust as needed */
+  right: 28px;
+  bottom: 17px;  /* Adjust as needed */
 `;
+
 const StyledLogo = styled.img`
   cursor: pointer;
   width: 250px;
