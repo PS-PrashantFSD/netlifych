@@ -1,22 +1,33 @@
 import React from 'react';
-import { useThemeContext } from '../../context/theme';
-import useCursorStyle from '../../hooks/useCursorStyle';
-import useStyledTheme from '../../hooks/useStyledTheme';
+import styled from 'styled-components';
 
-const Logo = props => {
- 
+const LogoContainer = styled.div`
+  position: relative; /* Ensure positioning context */
+  top: 0px;         /* Adjust as needed */
+  left: 10px;
+  bottom: 30px;        /* Adjust as needed */
+`;
 
+const StyledLogo = styled.img`
+  cursor: pointer;
+  width: 250px;
+  height: auto;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    margin: 10px;
+  }
+`;
+
+const Logo = () => {
   return (
-    <div
-      
-    >
-      <img
-        src="/logo.png"  // Reference directly from the public folder
+    <LogoContainer>
+      <StyledLogo
+        src="/logo.png" // Reference directly from the public folder
         alt="Luminexa Logo"
-        style={{ cursor: 'pointer', width: '250px', height: 'auto' }}
-        
       />
-    </div>
+    </LogoContainer>
   );
 };
 
