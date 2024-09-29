@@ -31,6 +31,8 @@ const Banner = () => {
   const theme = useStyledTheme();
   const { addCursorBorder, removeCursorBorder } = useCursorStyle();
 
+  const isMobile = windowSize.width < 768; // Adjust breakpoint as needed
+
   return (
     <BannerSection style={{ height: windowSize.height }}>
       <VideoContainer>
@@ -43,15 +45,17 @@ const Banner = () => {
           muted
         />
       </VideoContainer>
-      <CanvasEraser
-        ref={canvasRef}
-        width={windowSize.width}
-        height={windowSize.height}
-        size={120}
-        background={theme.background}
-        onMouseEnter={addCursorBorder}
-        onMouseLeave={removeCursorBorder}
-      />
+      {!isMobile && (
+        <CanvasEraser
+          ref={canvasRef}
+          width={windowSize.width}
+          height={windowSize.height}
+          size={120}
+          background={theme.background}
+          onMouseEnter={addCursorBorder}
+          onMouseLeave={removeCursorBorder}
+        />
+      )}
       <BannerTitle
         variants={titleAnimation}
         initial="initial"
