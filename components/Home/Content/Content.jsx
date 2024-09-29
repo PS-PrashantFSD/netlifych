@@ -8,9 +8,10 @@ const Content = () => {
       <ContentSection>
         <TextWrapper>
           <Text>
-          Innovation doesn’t simply emerge—
+          Innovation doesn’t simply 
+          emerge -
             <br />
-            it’s cultivated. We sift through the layers of the ordinary to unearth 
+             it’s cultivated. We sift through the layers of the ordinary to unearth 
             extraordinary ideas, embracing the grit and grind along the way.
           </Text>
         </TextWrapper>
