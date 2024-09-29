@@ -118,11 +118,11 @@ const FeaturedProject = () => {
                   transition={transition}
                   className="project-info"
                 >
-                  <h4>Augmented Reality</h4>
+                  <h4>Join Us on a Journey</h4>
                   <h4>003</h4>
                 </motion.div>
                 <ProjectTitle>
-                  NOT <br /> HUMBLE
+                  GET <br /> STARTED
                   <span className="arrow">
                     <Arrow animate={controlsArrow} transition={transition} />
                   </span>
@@ -137,12 +137,14 @@ const FeaturedProject = () => {
       </AnimateOnScreen>
       <AnimateOnScreen>
         <MenuContainer>
-          <MenuButton
-            sticky={false}
-            title="All Projects"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          />
+          <Link href="/all-projects" passHref>
+            <MenuButton
+              sticky={false}
+              title="All Projects"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
+          </Link>
         </MenuContainer>
       </AnimateOnScreen>
     </ContentSection>
