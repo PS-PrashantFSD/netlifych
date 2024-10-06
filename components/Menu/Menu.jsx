@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import NextLink from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -40,7 +39,7 @@ const Menu = () => {
   const [revealVideo, setRevealVideo] = React.useState(null);
   const [isHovering, setIsHovering] = React.useState(false);
   const theme = useStyledTheme();
-  const [{ isMenuOpen }] = useMenuContext();
+  const [{ isMenuOpen, dispatch }] = useMenuContext();
   const {
     addCursorBorder,
     removeCursorBorder,
@@ -117,10 +116,12 @@ const Menu = () => {
                       ease: transition.ease,
                     }}
                   >
-                    <NextLink href={route.path}>
+                    <NextLink href={route.path} passHref>
                       <Link
-                        key={`${route.id}_${isMobile}`}
                         name={route.id}
+                        onClick={() => {
+                          dispatch({ type: 'CLOSE_MENU' }); // Dispatch close action
+                        }}
                         onHoverStart={handleHoverStart}
                         onHoverEnd={handleHoverEnd}
                         custom={{ isMobile, color: theme.text }}
@@ -162,7 +163,7 @@ const Menu = () => {
               {isMobile && (
                 <Address>
                   <FooterText>
-                  14 1st Stage Bhanashankari<br /> Bangalore, KA IN
+                    14 1st Stage Bhanashankari<br /> Bangalore, KA IN
                   </FooterText>
                 </Address>
               )}

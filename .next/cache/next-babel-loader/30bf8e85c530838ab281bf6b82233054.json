@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './CanvasEraser';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/CanvasEraser/index.js"],"sourcesContent":["export { default } from './CanvasEraser';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,gBAAgB","ignoreList":[]},"metadata":{},"sourceType":"module"}

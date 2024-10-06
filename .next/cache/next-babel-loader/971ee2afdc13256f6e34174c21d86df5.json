@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Contact';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/Home/Contact/index.js"],"sourcesContent":["export { default } from './Contact';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,WAAW","ignoreList":[]},"metadata":{},"sourceType":"module"}

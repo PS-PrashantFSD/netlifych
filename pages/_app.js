@@ -17,7 +17,7 @@ const themes = {
   light: lightTheme,
 };
 
-const ThemedApp = ({ children }) => {
+function ThemedApp({ children }) {
   const [state] = useThemeContext();
   const currentTheme = themes[state.theme];
 
@@ -27,11 +27,13 @@ const ThemedApp = ({ children }) => {
       {children}
     </ThemeProvider>
   );
-};
+}
 
-const Header = () => <AppBar direction="down" renderAs="header" />;
+function Header() {
+  return <AppBar direction="down" renderAs="header" />;
+}
 
-const App = ({ Component, pageProps }) => {
+function App({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -39,7 +41,8 @@ const App = ({ Component, pageProps }) => {
         <link rel="icon" href="/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/yzi3byl.css" />
       </Head>
-      <style jsx global>{`
+      <style jsx global>
+        {`
         @font-face {
           font-family: calibre;
           font-weight: 400;
@@ -57,7 +60,8 @@ const App = ({ Component, pageProps }) => {
           src: url('/fonts/CalibreTest-Black.otf') format('opentype'),
             url('/fonts/calibre-test-black.woff') format('woff');
         }
-      `}</style>
+      `}
+      </style>
       <ThemeContextProvider>
         <MenuContextProvider>
           <CursorContextProvider>
@@ -73,6 +77,6 @@ const App = ({ Component, pageProps }) => {
       </ThemeContextProvider>
     </>
   );
-};
+}
 
 export default App;

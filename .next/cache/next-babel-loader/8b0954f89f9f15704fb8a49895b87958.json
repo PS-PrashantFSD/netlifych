@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './About';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/Home/About/index.js"],"sourcesContent":["export { default } from './About';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,SAAS","ignoreList":[]},"metadata":{},"sourceType":"module"}

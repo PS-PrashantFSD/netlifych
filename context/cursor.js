@@ -71,13 +71,13 @@ const rootReducer = (state, action) => {
 
 export const CursorContext = React.createContext();
 
-export const CursorContextProvider = ({ children }) => {
+export function CursorContextProvider({ children }) {
   const [state, dispatch] = React.useReducer(rootReducer, INITIAL_STATE);
   const store = React.useMemo(() => ({ state, dispatch }), [state]);
   return (
     <CursorContext.Provider value={store}>{children}</CursorContext.Provider>
   );
-};
+}
 
 export const useCursorContext = () => {
   const { state, dispatch } = React.useContext(CursorContext);

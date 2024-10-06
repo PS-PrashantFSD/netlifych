@@ -21,11 +21,11 @@ const rootReducer = (state, action) => {
 
 export const MenuContext = React.createContext();
 
-export const MenuContextProvider = ({ children }) => {
+export function MenuContextProvider({ children }) {
   const [state, dispatch] = React.useReducer(rootReducer, INITIAL_STATE);
   const store = React.useMemo(() => ({ state, dispatch }), [state]);
   return <MenuContext.Provider value={store}>{children}</MenuContext.Provider>;
-};
+}
 
 export const useMenuContext = () => {
   const { state, dispatch } = React.useContext(MenuContext);

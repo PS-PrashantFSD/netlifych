@@ -6,7 +6,7 @@ import AboutSection from '../components/Home/About';
 import ContactSection from '../components/Home/Contact';
 import Footer from '../components/Home/Footer';
 
-const Home = () => {
+function Home() {
   return (
     <>
       <BannerSection />
@@ -17,6 +17,6 @@ const Home = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default React.memo(Home);

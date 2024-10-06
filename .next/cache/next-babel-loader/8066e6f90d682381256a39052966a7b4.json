@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './SiteOfTheDay';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/SiteOfTheDay/index.js"],"sourcesContent":["export { default } from './SiteOfTheDay';\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,gBAAgB","ignoreList":[]},"metadata":{},"sourceType":"module"}

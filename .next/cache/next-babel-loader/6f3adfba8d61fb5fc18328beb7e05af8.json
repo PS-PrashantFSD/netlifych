@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './SocialMedia';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/SocialMedia/index.js"],"sourcesContent":["export { default } from './SocialMedia';\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,eAAe","ignoreList":[]},"metadata":{},"sourceType":"module"}

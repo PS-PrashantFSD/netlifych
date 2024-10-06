@@ -19,12 +19,8 @@ export const listItemsVariants = {
 };
 
 export const linkVariants = {
-  initial: ({ isMobile }) => {
-    return isMobile ? { x: 0 } : { x: -74 };
-  },
-  hover: ({ isMobile, color }) => {
-    return isMobile ? { color } : { x: 0 };
-  },
+  initial: ({ isMobile }) => (isMobile ? { x: 0 } : { x: -74 }),
+  hover: ({ isMobile, color }) => (isMobile ? { color } : { x: 0 }),
 };
 
 export const videoRevealVariants = {

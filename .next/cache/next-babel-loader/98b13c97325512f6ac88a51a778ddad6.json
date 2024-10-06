@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Menu';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/Menu/index.js"],"sourcesContent":["export { default } from './Menu';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,QAAQ","ignoreList":[]},"metadata":{},"sourceType":"module"}

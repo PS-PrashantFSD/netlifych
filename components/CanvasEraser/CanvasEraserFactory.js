@@ -7,8 +7,7 @@ const DEFAULT_OPTIONS = {
   size: 40,
 };
 
-const getElementComputedStyled = (element, prop) =>
-  parseFloat(getComputedStyle(element, null)[prop].replace('px', ''));
+const getElementComputedStyled = (element, prop) => parseFloat(getComputedStyle(element, null)[prop].replace('px', ''));
 
 const factory = () => {
   let _canvas = null;
@@ -28,8 +27,7 @@ const factory = () => {
 
     if (!enabled) return;
 
-    let p =
-      Math.floor(currentX / size) + Math.floor(currentY / size) * colParts;
+    let p = Math.floor(currentX / size) + Math.floor(currentY / size) * colParts;
 
     if (p >= 0 && p < numParts) {
       _data.ratio += _data.parts[p];
@@ -53,10 +51,12 @@ const factory = () => {
     }
   };
 
-  const _onMouseMove = event => {
+  const _onMouseMove = (event) => {
     event.preventDefault();
 
-    const { enabled, posX, posY, scaleRatio, touchX, touchY } = _data;
+    const {
+      enabled, posX, posY, scaleRatio, touchX, touchY,
+    } = _data;
     const currentX = (event.pageX - posX) * scaleRatio;
     const currentY = (event.pageY - posY) * scaleRatio;
 
@@ -72,10 +72,12 @@ const factory = () => {
     _data.touchY = currentY;
   };
 
-  const _onMouseDown = event => {
+  const _onMouseDown = (event) => {
     event.preventDefault();
 
-    const { enabled, posX, posY, scaleRatio } = _data;
+    const {
+      enabled, posX, posY, scaleRatio,
+    } = _data;
     const currentX = (event.pageX - posX) * scaleRatio;
     const currentY = (event.pageY - posY) * scaleRatio;
 
@@ -95,10 +97,12 @@ const factory = () => {
     _canvas.addEventListener('mousemove', _onMouseMove);
   };
 
-  const _onMouseClick = event => {
+  const _onMouseClick = (event) => {
     event.preventDefault();
 
-    const { enabled, posX, posY, scaleRatio } = _data;
+    const {
+      enabled, posX, posY, scaleRatio,
+    } = _data;
     const currentX = (event.pageX - posX) * scaleRatio;
     const currentY = (event.pageY - posY) * scaleRatio;
 
@@ -131,13 +135,12 @@ const factory = () => {
     _canvas = source;
     _context = _canvas.getContext('2d');
     const devicePixelRatio = window.devicePixelRatio || 1;
-    const backingStoreRatio =
-      _context.webkitBackingStorePixelRatio ||
-      _context.mozBackingStorePixelRatio ||
-      _context.msBackingStorePixelRatio ||
-      _context.oBackingStorePixelRatio ||
-      _context.backingStorePixelRatio ||
-      1;
+    const backingStoreRatio = _context.webkitBackingStorePixelRatio
+      || _context.mozBackingStorePixelRatio
+      || _context.msBackingStorePixelRatio
+      || _context.oBackingStorePixelRatio
+      || _context.backingStorePixelRatio
+      || 1;
     const scaleRatio = devicePixelRatio / backingStoreRatio;
 
     const realWidth = getElementComputedStyled(_canvas, 'width');
@@ -193,7 +196,7 @@ const factory = () => {
       ptouchY: 0,
       w: width,
       h: height,
-      scaleRatio: scaleRatio,
+      scaleRatio,
       ratio: 0,
       complete: false,
       currentOptions,
@@ -202,7 +205,9 @@ const factory = () => {
   };
 
   const clear = () => {
-    const { w, h, numParts, onComplete } = _data;
+    const {
+      w, h, numParts, onComplete,
+    } = _data;
 
     if (_data) {
       _context.clearRect(0, 0, w, h);

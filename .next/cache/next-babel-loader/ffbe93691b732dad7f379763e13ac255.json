@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './StickyCursor';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/StickyCursor/index.js"],"sourcesContent":["export { default } from './StickyCursor';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,gBAAgB","ignoreList":[]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './AnimateOnScreen';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/AnimateOnScreen/index.js"],"sourcesContent":["export { default } from './AnimateOnScreen';\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,mBAAmB","ignoreList":[]},"metadata":{},"sourceType":"module"}

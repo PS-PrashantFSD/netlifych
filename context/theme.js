@@ -31,7 +31,7 @@ const rootReducer = (state, action) => {
 
 export const ThemeContext = React.createContext();
 
-export const ThemeContextProvider = ({ children }) => {
+export function ThemeContextProvider({ children }) {
   const [state, dispatch] = React.useReducer(rootReducer, INITIAL_STATE);
   const store = React.useMemo(() => ({ state, dispatch }), [state]);
 
@@ -45,7 +45,7 @@ export const ThemeContextProvider = ({ children }) => {
   return (
     <ThemeContext.Provider value={store}>{children}</ThemeContext.Provider>
   );
-};
+}
 
 export const useThemeContext = () => {
   const { state, dispatch } = React.useContext(ThemeContext);

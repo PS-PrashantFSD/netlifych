@@ -29,14 +29,14 @@ export default [
       'Responsive Design -ReactJs',
       'Mobile App Development',
       'Custome Apllication Build',
-      
+
     ],
   ],
   [
     'nextAi - Object Detection',
     [
       '..',
-    
+
     ],
   ],
 ];

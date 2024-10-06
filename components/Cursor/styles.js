@@ -16,29 +16,29 @@ export const StyledCursor = styled.div`
   pointer-events: none;
   z-index: ${({ theme }) => theme.zIndex.cursor};
 
-  ${({ color }) => {
+  ${({ color }) =>
     // overrides default theme color
-    return (
-      color &&
-      css`
+    (
+      color
+      && css`
         border: 18px solid ${color};
       `
-    );
-  }};
+    )
+};
 
-  ${({ bordered, color, theme }) => {
+  ${({ bordered, color, theme }) =>
     // create a bordered style when hovering elements
-    return (
-      bordered &&
-      css`
+    (
+      bordered
+      && css`
         width: 64px;
         height: 64px;
         margin: -32px 0 0 -32px;
         border-width: 5px;
         border-color: ${color || theme.text};
       `
-    );
-  }};
+    )
+};
 
   @media (hover: none) and (pointer: coarse) {
     display: none;
