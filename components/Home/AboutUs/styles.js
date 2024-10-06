@@ -1,6 +1,6 @@
-import styled from './../../../styles/shared/container';
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
-const  containerStyles = styled;
+import containerStyles from '../../../styles/shared/container';
 import { secondaryFontStyle } from './../../../styles/shared/text';
 import DefaultMenuButton from '../../MenuButton';
 

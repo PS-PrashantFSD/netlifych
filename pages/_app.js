@@ -10,7 +10,7 @@ import lightTheme from '../styles/themes/light';
 import AppBar from '../components/AppBar';
 import Cursor from '../components/Cursor';
 import Menu from '../components/Menu';
-import SiteOfTheDay from '../components/SiteOfTheDay';
+
 
 const themes = {
   dark: darkTheme,
@@ -37,10 +37,13 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Luminexa Technologies</title>
-        <link rel="icon" href="/favicon.png" />
-        <link rel="stylesheet" href="https://use.typekit.net/yzi3byl.css" />
-      </Head>
+  <title>Luminexa Technologies</title>
+  <meta name="description" content="Innovative solutions by Luminexa Technologies" />
+  <meta name="keywords" content="Luminexa, Technologies, Software, Solutions" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  ...
+</Head>
+
       <style jsx global>
         {`
         @font-face {
@@ -70,7 +73,7 @@ function App({ Component, pageProps }) {
               <Menu />
               <Component {...pageProps} />
               <Cursor />
-              <SiteOfTheDay />
+              
             </ThemedApp>
           </CursorContextProvider>
         </MenuContextProvider>

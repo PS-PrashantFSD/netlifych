@@ -8,7 +8,7 @@ export default [
   {
     id: 'bleeping-easy',
     title: 'About Us',
-    path: '/About',
+    path: '/about',
     video: 'easy.mp4',
   },
   {
