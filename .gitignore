@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+env/
+venv/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+
+# Ruby
+*.gem
+*.rbc
+log/
+tmp/
+*.swp
+
+# PHP
+/vendor/
+*.log
+.env
+
+# Visual Studio
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs
