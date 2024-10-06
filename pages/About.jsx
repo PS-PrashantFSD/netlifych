@@ -15,7 +15,7 @@ import {
   ProjectTitle,
   ImagePreview,
   AboutDescription,
-} from './styles2';
+} from './styless';
 
 const transition = {
   duration: 1,
