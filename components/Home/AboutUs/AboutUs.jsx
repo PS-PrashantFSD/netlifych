@@ -107,7 +107,7 @@ const AboutUs = () => {
                   <h4>003</h4>
                 </motion.div>
                 <ProjectTitle>
-                  ABOUT US
+                  ABOUT <br/> US
                   <span className="arrow">
                     <Arrow animate={controlsArrow} transition={transition} />
                   </span>

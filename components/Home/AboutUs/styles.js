@@ -39,6 +39,7 @@ export const ProjectInfo = styled(motion.div)`
     position: absolute;
     top: 75px;
     z-index: 1;
+    padding-left: 20px;
   }
 
   & h3 {
@@ -131,7 +132,7 @@ export const ImagePreview = styled.div`
 export const AboutDescription = styled.div`
   flex: 1; /* Take up available space */
   padding-top: 120px; /* Reduced padding to decrease space */
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   font-size: 1.8rem; /* Increase font size */
   display: flex;
   align-items: center; /* Center vertically */
