@@ -41,7 +41,6 @@ function App({ Component, pageProps }) {
   <meta name="description" content="Innovative solutions by Luminexa Technologies" />
   <meta name="keywords" content="Luminexa, Technologies, Software, Solutions" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  ...
 </Head>
 
       <style jsx global>

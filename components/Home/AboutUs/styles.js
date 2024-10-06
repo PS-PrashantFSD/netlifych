@@ -7,6 +7,7 @@ import DefaultMenuButton from '../../MenuButton';
 export const ContentSection = styled(motion.section)`
   ${containerStyles};
   position: relative;
+  display : block;
   margin-top: 200px;
   
 
@@ -129,7 +130,7 @@ export const ImagePreview = styled.div`
 
 export const AboutDescription = styled.div`
   flex: 1; /* Take up available space */
-  padding: 60px 30px; /* Reduced padding to decrease space */
+  padding-top: 120px; /* Reduced padding to decrease space */
   margin-bottom: 150px;
   font-size: 1.8rem; /* Increase font size */
   display: flex;

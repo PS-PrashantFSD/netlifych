@@ -49,6 +49,7 @@ export const TextWrapper = styled.div`
       margin-bottom: 34px;
     }
   `};
+  
 `;
 
 export const ServicesWrapper = styled.div`
