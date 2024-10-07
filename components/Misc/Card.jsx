@@ -31,9 +31,9 @@ const Card = () => {
           </div>
           <div className="glass" />
           <div className="content">
-            <span className="title">Augmented Reality</span>
+            <span className="title">nexAR</span>
             <span className="text">
-              Innovate, Eliminate and Dominate
+              Augmented Reality - Innovate, Eliminate and Dominate
             </span>
           </div>
           <div className="bottom">
@@ -96,6 +96,7 @@ const StyledWrapper = styled.div`
     color: #e0e0e0;
     font-weight: 900;
     font-size: 20px;
+    margin-top: 50px;
   }
 
   .content .text {
@@ -133,14 +134,14 @@ const StyledWrapper = styled.div`
   .bottom .view-more .view-more-button {
     background: none;
     border: none;
-    color: #00c37b;
+    color: ${({ theme }) => theme.colors.red};;
     font-weight: bolder;
     font-size: 12px;
   }
 
   .bottom .view-more .svg {
     fill: none;
-    stroke: #00c37b;
+    stroke: ${({ theme }) => theme.colors.red};;
     stroke-width: 3px;
     max-height: 15px;
   }
@@ -186,12 +187,12 @@ const StyledWrapper = styled.div`
     top: 0;
     right: 0;
     box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
-    background: rgba(0, 249, 203, 0.2);
     transition: all 0.5s ease-in-out;
   }
 
   .logo .circle1 {
     width: 170px;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(150, 0, 0, 0.6));
     transform: translate3d(0, 0, 20px);
     top: 8px;
     right: 8px;
@@ -199,6 +200,7 @@ const StyledWrapper = styled.div`
 
   .logo .circle2 {
     width: 140px;
+    background: linear-gradient(135deg, rgba(255, 50, 50, 0.7), rgba(180, 0, 0, 0.6));
     transform: translate3d(0, 0, 40px);
     top: 10px;
     right: 10px;
@@ -207,6 +209,7 @@ const StyledWrapper = styled.div`
 
   .logo .circle3 {
     width: 110px;
+    background: linear-gradient(135deg, rgba(255, 100, 100, 0.6), rgba(210, 0, 0, 0.6));
     transform: translate3d(0, 0, 60px);
     top: 17px;
     right: 17px;
@@ -215,6 +218,7 @@ const StyledWrapper = styled.div`
 
   .logo .circle4 {
     width: 80px;
+    background: linear-gradient(135deg, rgba(255, 150, 150, 0.5), rgba(220, 0, 0, 0.6));
     transform: translate3d(0, 0, 80px);
     top: 23px;
     right: 23px;
@@ -223,6 +227,7 @@ const StyledWrapper = styled.div`
 
   .logo .circle5 {
     width: 50px;
+    background: linear-gradient(135deg, rgba(255, 200, 200, 0.4), rgba(230, 0, 0, 0.6));
     transform: translate3d(0, 0, 100px);
     top: 30px;
     right: 30px;
@@ -263,3 +268,4 @@ const StyledWrapper = styled.div`
 `;
 
 export default Card;
+
