@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import useCursorStyle from '../../../hooks/useCursorStyle';
 import useMediaQuery from '../../../hooks/useMediaQuery';
 import AnimateOnScreen from '../../AnimateOnScreen';
+import Card from './../../Misc/Card'
 import Arrow from '../../Icons/Arrow';
 import Contact from './../../Home/Contact';
 import {
@@ -126,7 +127,9 @@ const Services = () => {
           </h2>
         </AboutDescription>
       </AnimateOnScreen>
-    
+      <AnimateOnScreen>
+        <Card/>
+      </AnimateOnScreen>
       <AnimateOnScreen>
         <Contact />
       </AnimateOnScreen>
