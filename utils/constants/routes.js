@@ -14,7 +14,7 @@ export default [
   {
     id: 'make-it-zero',
     title: 'Services',
-    path: '/Services',
+    path: '/services',
     video: 'make-it-zero.mp4',
   },
   {
