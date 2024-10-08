@@ -19,13 +19,13 @@ export const ContentSection = styled(motion.section)`
 
 export const ProjectAnchor = styled(motion.a)`
   display: block;
-  width: 100%;
-  height: 480px;
-  margin: 0 0 50px; /* Adjusted margin-bottom for less gap */
+  width: 0%;
+  height: 350px;
+  margin: 0; /* Adjusted margin-bottom for less gap */
 
   ${({ theme }) => theme.breakpoints.tablet`
     height: 190px;
-    margin-bottom: 20px; /* Adjusted margin-bottom for tablet view */
+    
   `};
 `;
 
@@ -82,7 +82,7 @@ export const ProjectInfo = styled(motion.div)`
 
 export const ProjectTitle = styled(motion.h1)`
   position: absolute;
-  top: 347px;
+  top: 30px;
   left: -3px;
   z-index: 1;
 
@@ -131,7 +131,7 @@ export const ImagePreview = styled.div`
 
 export const AboutDescription = styled.div`
   flex: 1; /* Take up available space */
-  padding-top: 120px; /* Reduced padding to decrease space */
+  padding-top: 0px; /* Reduced padding to decrease space */
   margin-bottom: 100px;
   font-size: 1.8rem; /* Increase font size */
   display: flex;
@@ -217,6 +217,48 @@ export const MenuButton = styled(DefaultMenuButton)`
     & span {
       font-size: 1.125rem;
       line-height: 1.2777777778;
+    }
+  `};
+`;
+
+
+export const TextWrapper = styled.div`
+  display: flex;
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Space out the text and card */
+  width: 100%;
+  gap: 20px; /* Space between text and card */
+  margin-bottom : 90px;
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 44px;
+    max-width: 600px;
+    font-size: 2.625rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  & p {
+    max-width: 448px;
+    margin: 6.9px 0;
+    line-height: 1.2777777778;
+  }
+
+  ${({ theme }) => theme.breakpoints.small`
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: flex-start; /* Align items to the start on small screens */
+    width: 100%;
+
+    & h2 {
+      margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+  `};
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    & h2 {
+      font-size: 1.5rem;
+      margin-bottom: 34px;
     }
   `};
 `;
