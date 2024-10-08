@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import containerStyles from '../../../styles/shared/container';
-import { secondaryFontStyle } from './../../../styles/shared/text';
+import { secondaryFontStyle } from '../../../styles/shared/text';
 import DefaultMenuButton from '../../MenuButton';
 
 export const ContentSection = styled(motion.section)`
@@ -99,7 +99,7 @@ export const ProjectTitle = styled(motion.h1)`
   }
 
   ${({ theme }) => theme.breakpoints.tablet`
-    top: 166px;
+    top: 30px;
     left: 0;
     font-size: 3.75rem;
     line-height: 0.7166666667;
@@ -220,7 +220,6 @@ export const MenuButton = styled(DefaultMenuButton)`
     }
   `};
 `;
-
 
 export const TextWrapper = styled.div`
   display: flex;
