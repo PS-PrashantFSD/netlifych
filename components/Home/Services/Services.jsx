@@ -12,6 +12,7 @@ import {
   ProjectTitle,
   AboutDescription,
 } from './styles';
+import Scard from '../../Misc/Scard';
 
 const Services = () => {
   const { addCursorBorder, removeCursorBorder } = useCursorStyle();
@@ -66,8 +67,12 @@ const Services = () => {
         </div>
         
       </TextWrapper>
-
+        <h1>
+          Explore
+        </h1>
+      <Scard/>
       <Contact />
+     
     </ContentSection>
   );
 };

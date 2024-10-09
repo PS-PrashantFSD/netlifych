@@ -31,7 +31,7 @@ const Card = () => {
           </div>
           <div className="glass" />
           <div className="content">
-            <span className="title">nexAR</span>
+            <span className="title">Luminexa</span>
             <span className="text">
               Innovate, Eliminate, Dominate
             </span>
