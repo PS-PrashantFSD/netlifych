@@ -106,11 +106,24 @@ const StyledWrapper = styled.div`
 
   .back {
     transform: rotateY(0.5turn);
-    background-color: ${({ theme }) => theme.colors.red};;
+    background-color: ${({ theme }) => theme.colors.red};
   }
 
   .description {
     transform: translateZ(3rem);
+  }
+
+  @media (max-width: 768px) {
+    display: flex; /* Ensure flexbox is used */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align cards */
+    margin-top: 40px; /* Adjust margins for mobile */
+
+    .card {
+      width: 80%; /* Full width for mobile */
+      height: 250px; /* Fixed height for mobile */
+      margin-bottom: 2rem; /* Space between cards */
+    }
   }
 `;
 
