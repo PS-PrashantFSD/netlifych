@@ -55,15 +55,13 @@ const Services = () => {
       <Card />
         <div>
           <h2>
-            Our mission is to revolutionize visual experiences, 
-            bridging the gap between the physical and digital worlds.
+          Our target is to revolutionize visual experiences, 
+          bridging the gap between the physical and digital worlds
           </h2>
           <p>
-            At our company, we specialize in a range of cutting-edge digital solutions. 
-            Our services include advanced Augmented Reality software that transforms your 
-            digital interactions, comprehensive Web Development to create user-friendly online 
-            platforms, innovative Image Tracking and Object Detection systems designed to streamline 
-            processes through smart recognition.
+          Our company specializes in cutting-edge digital solutions, including advanced Augmented 
+          Reality software, user-friendly Web Development, and innovative AI-based object detection 
+          systems for smart recognition.
           </p>
         </div>
         

@@ -33,7 +33,7 @@ const Card = () => {
           <div className="content">
             <span className="title">nexAR</span>
             <span className="text">
-              Augmented Reality - Innovate, Eliminate and Dominate
+              Innovate, Eliminate, Dominate
             </span>
           </div>
           <div className="bottom">
