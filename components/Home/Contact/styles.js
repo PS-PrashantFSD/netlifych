@@ -8,13 +8,14 @@ export const ContactSection = styled(motion.section)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px 285px;
+  padding: 0 0px 200px;
   color: ${({ theme }) => theme.colors.red};
   /* opacity: 1; */
   transform: translate3d(0, 60px, 0);
   /* transition: opacity 1s ease, transform 1s cubic-bezier(0, 0.7, 0.29, 0.97);
   transition-delay: 0.3s; */
   /* will-change: opacity, transform; */
+  width: 100%;
 
   & .column {
     width: 33.333%;
@@ -69,7 +70,7 @@ export const ContactSection = styled(motion.section)`
   `};
 
   ${({ theme }) => theme.breakpoints.tablet`
-    padding: 0 32px 156px;
+    padding: 0 0px 60px;
 
     & address {
       padding: 17px 0 42px;

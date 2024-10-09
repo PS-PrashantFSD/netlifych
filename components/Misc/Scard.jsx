@@ -117,7 +117,7 @@ const StyledWrapper = styled.div`
     display: flex; /* Ensure flexbox is used */
     flex-direction: column; /* Stack cards vertically */
     align-items: center; /* Center align cards */
-    margin-top: 40px; /* Adjust margins for mobile */
+    margin: 40px 0px 40px; /* Adjust margins for mobile */
 
     .card {
       width: 80%; /* Full width for mobile */

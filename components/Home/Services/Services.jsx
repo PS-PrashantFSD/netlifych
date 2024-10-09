@@ -67,8 +67,8 @@ const Services = () => {
         </div>
         
       </TextWrapper>
-        <h1 style={{ fontSize: '100px' }}>
-          Explore
+        <h1 style={{ fontSize: '80px' }}>
+          Explore~
         </h1>
       <Scard/>
       <Contact />
