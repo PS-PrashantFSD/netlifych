@@ -145,6 +145,7 @@ export const AboutDescription = styled.div`
 
   ${({ theme }) => theme.breakpoints.tablet`
     font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 120px;
   `};
 `;
 
