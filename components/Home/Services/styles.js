@@ -132,7 +132,7 @@ export const ImagePreview = styled.div`
 export const AboutDescription = styled.div`
   flex: 1; /* Take up available space */
   padding-top: 0px; /* Reduced padding to decrease space */
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   font-size: 1.8rem; /* Increase font size */
   display: flex;
   align-items: center; /* Center vertically */
@@ -226,7 +226,7 @@ export const TextWrapper = styled.div`
   align-items: center; /* Center the items vertically */
   justify-content: space-between; /* Space out the text and card */
   width: 100%;
-  gap: 20px; /* Space between text and card */
+  gap: 33px; /* Space between text and card */
   margin-bottom : 90px;
 
   & h2 {
