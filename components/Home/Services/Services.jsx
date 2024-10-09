@@ -52,6 +52,7 @@ const Services = () => {
       </AboutDescription>
 
       <TextWrapper>
+      <Card />
         <div>
           <h2>
             Our mission is to revolutionize visual experiences, 
@@ -65,7 +66,7 @@ const Services = () => {
             processes through smart recognition.
           </p>
         </div>
-        <Card />
+        
       </TextWrapper>
 
       <Contact />
