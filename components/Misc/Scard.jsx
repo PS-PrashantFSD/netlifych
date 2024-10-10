@@ -61,7 +61,7 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between; /* Distribute space evenly */
   gap: 2rem; /* Equal gap between cards */
-  margin: 100px 0px 200px 0px;
+  margin: 50px 0px 50px 0px;
   
   .card {
     width: 18rem; /* Increased card width */
