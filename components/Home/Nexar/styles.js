@@ -7,9 +7,8 @@ import DefaultMenuButton from '../../MenuButton';
 export const ContentSection = styled(motion.section)`
   ${containerStyles};
   position: relative;
-  display : block;
+  display: block;
   margin-top: 200px;
-  
 
   ${({ theme }) => theme.breakpoints.tablet`
     margin-top: 100px;
@@ -24,10 +23,10 @@ export const ProjectAnchor = styled(motion.a)`
   margin: 0; /* Adjusted margin-bottom for less gap */
 
   ${({ theme }) => theme.breakpoints.tablet`
-    height: 190px;
-    
+    height: 190px; 
   `};
 `;
+
 export const Text = styled.h2`
   margin: 0;
   font-size: 2rem;
@@ -244,7 +243,7 @@ export const TextWrapper = styled.div`
   justify-content: space-between; /* Space out the text and card */
   width: 100%;
   gap: 33px; /* Space between text and card */
-  margin-bottom : 180px;
+  margin-bottom: 180px;
 
   & h2 {
     margin: 0;
@@ -279,7 +278,6 @@ export const TextWrapper = styled.div`
   `};
 `;
 
-
 export const Text1 = styled(motion.section)`
   ${containerStyles};
 
@@ -291,8 +289,8 @@ export const Text1 = styled(motion.section)`
 `;
 
 export const Text2 = styled.div`
-  margin-left: 8.333%;
-  width: calc(58.333% - 32px);
+  margin-left: 0;
+  width: 100%;
 
   ${({ theme }) => theme.breakpoints.small`
     width: 100%;
@@ -300,12 +298,15 @@ export const Text2 = styled.div`
   `};
 `;
 
-export const Text3 = styled.h2`
+export const Text3 = styled.div`
+  display: flex; /* Make it a flex container */
+  align-items: center; /* Center items vertically */
+  gap: 30px; /* Add some space between text and card */
   margin: 0;
   font-size: 2.625rem;
   line-height: 1;
   font-weight: 500;
-  max-width: 640px;
+  max-width: 100%;
 
   ${({ theme }) => theme.breakpoints.tablet`
     font-size: 1.5rem;

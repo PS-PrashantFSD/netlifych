@@ -16,6 +16,7 @@ import {
 } from './styles';
 import Scard from '../../Misc/Scard';
 import Button from '../../Misc/Button'
+import Carde from '../../Misc/Carde'
 
 const Nexar = () => {
   const { addCursorBorder, removeCursorBorder } = useCursorStyle();
@@ -50,18 +51,17 @@ const Nexar = () => {
       <Text1>
         <Text2>
           <Text3>
-          Luminexa providing, Image tracking and virtual software’s (nexAR) based on AR & XR. They aim to revolutionize  
-digital content experiences by integrating it seamlessly with the real world, offering unique, interactive experiences  
-that captivate audiences.
-
-
+                Luminexa providing, Image tracking and virtual software’s (nexAR) based on AR & XR. They aim to revolutionize  
+                digital content experiences by integrating it seamlessly with the real world, offering unique, interactive experiences  
+                that captivate audiences
+                <Carde/>
           </Text3>
         </Text2>
       </Text1>
       <TextWrapper>
       <Cards />
         <div>
-        <img src="nexars.png" alt="Description of the image"  style={{ width: '300px', height: 'auto' , marginBottom: '20px'}}/>
+        <img src="nexars.png" alt="Description of the image"  style={{ width: '300px', height: 'auto' , marginBottom: '20PX'}}/>
           <h2>
           Our target is to revolutionize visual experiences, 
           bridging the gap between the physical and digital worlds
