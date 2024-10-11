@@ -28,6 +28,22 @@ export const ProjectAnchor = styled(motion.a)`
     
   `};
 `;
+export const Text = styled.h2`
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 500;
+  max-width: 640px;
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    font-size: 1.5rem;
+    line-height: 1;
+
+    & br {
+      display: none;
+    }
+  `};
+`;
 
 export const ProjectInfo = styled(motion.div)`
   margin-left: 8.333%;
@@ -131,9 +147,9 @@ export const ImagePreview = styled.div`
 
 export const AboutDescription = styled.div`
   flex: 1; /* Take up available space */
-  padding: 120px 60px 160px 360px; /* Reduced padding to decrease space */
+  padding: 120px 60px 160px 60px; /* Reduced padding to decrease space */
   margin-bottom: 40px;
-  font-size: 1.8rem; /* Increase font size */
+  font-size: 1rem; /* Increase font size */
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
@@ -228,7 +244,7 @@ export const TextWrapper = styled.div`
   justify-content: space-between; /* Space out the text and card */
   width: 100%;
   gap: 33px; /* Space between text and card */
-  margin-bottom : 90px;
+  margin-bottom : 180px;
 
   & h2 {
     margin: 0;

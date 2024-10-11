@@ -13,6 +13,7 @@ import {
   ProjectTitle,
   ImagePreview,
   AboutDescription,
+  Wrap
 } from './styles';
 
 const transition = {
@@ -131,9 +132,31 @@ const AboutUs = () => {
             tracking, 3D image tracking, and avatar creation, we empower businesses and creators to 
             redefine how we interact with the visual world.
           </h2>
+          
         </AboutDescription>
       </AnimateOnScreen>
-    
+      <AnimateOnScreen>
+        <Wrap>
+        <h1>
+            Our Mission
+          </h1>
+          <h2>
+          Contribute to our community by pioneering innovative solutions that enhance everyday experiences. 
+          We are dedicated to delivering unparalleled value to our customers, guided by principles of 
+          integrity, sustainability, and continuous improvement.
+          </h2>
+          
+          <h1>
+            Our Vision
+          </h1>
+          <h2>
+          Empower positive change through cutting-edge technologies. Our vision is to be the 
+          leading force in our industry, 
+          driving global impact and inspiring a future where possibilities are limitless.
+          </h2>
+        </Wrap>
+      </AnimateOnScreen>
+      
       <AnimateOnScreen>
         <Contact />
       </AnimateOnScreen>

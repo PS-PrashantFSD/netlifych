@@ -37,7 +37,7 @@ const Banner = () => {
     <BannerSection style={{ height: windowSize.height }}>
       <VideoContainer>
         <video
-          src="/videos/menu.mp4"
+          src="/videos/banner.mp4"
           height="100%"
           width="100%"
           loop

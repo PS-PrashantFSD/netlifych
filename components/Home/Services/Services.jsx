@@ -11,6 +11,7 @@ import {
   ProjectInfo,
   ProjectTitle,
   AboutDescription,
+  Text
 } from './styles';
 import Scard from '../../Misc/Scard';
 import Button from '../../Misc/Button'
@@ -46,11 +47,12 @@ const Services = () => {
 
       {/* About Description */}
       <AboutDescription>
-        <h2>
-          We offer a range of services tailored to meet the unique needs of our clients, 
+        <Text>
+          <h2>We offer a range of services tailored to meet the unique needs of our clients, 
           including web development, augmented reality solutions, and innovative design services. 
           Our team is dedicated to delivering exceptional results that drive success and engagement.
-        </h2>
+        </h2></Text>
+          
       </AboutDescription>
 
       <TextWrapper>
@@ -76,7 +78,7 @@ const Services = () => {
          Featured Product - nexAR
         </h1>
         <Button/>
-        <p style={{ marginBottom: '50px' }}> In today's competitive market, in every businesses (Small scale business to large scale business) seeks for innovative
+        <p style={{ marginBottom: '90px' }}> In today's competitive market, in every businesses (Small scale business to large scale business) seeks for innovative
 solutions to engage their audience more effectively. Traditional methods often fail to capture attention and provide
 interactive experiences. Luminexa addresses this gap by leveraging Augmented Reality (AR) & Mixed Realty (XR) to
 enhance user engagement and interaction.</p>

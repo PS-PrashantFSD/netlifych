@@ -220,3 +220,44 @@ export const MenuButton = styled(DefaultMenuButton)`
     }
   `};
 `;
+
+export const Wrap = styled(motion.div)`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px; 
+  margin: 40px 0px 120px 0px;
+
+  & h1 {
+    grid-column: span 2; /* Span two columns */
+    font-size: 6rem; /* Adjust as needed */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+  }
+
+  & h2 {
+    grid-column: span 2; 
+    font-size: 1.5rem; 
+    text-align: left; 
+    transition: color 0.3s;
+
+    &:hover {
+      color: white; 
+    }
+  }
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+
+    & h1{
+      font-size : 4rem;
+    }
+  `};
+
+  ${({ theme }) => theme.breakpoints.small`
+    grid-template-columns: 1fr; /* One column on small screens */
+  `};
+`;
