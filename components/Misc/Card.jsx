@@ -39,16 +39,8 @@ const Card = () => {
           <div className="bottom">
             <div className="social-buttons-container"></div>
             <div className="view-more">
-              <button className="view-more-button">View more</button>
-              <svg
-                className="svg"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m6 9 6 6 6-6" />
-              </svg>
+              <button className="view-more-button">Click Here</button>
+              
             </div>
           </div>
         </div>
