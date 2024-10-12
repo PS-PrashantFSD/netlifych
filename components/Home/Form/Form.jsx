@@ -13,10 +13,10 @@ const ContactSection = styled(motion.section)`
   color: ${({ theme }) => theme.colors.red};
   transform: translate3d(0, 60px, 0);
   width: 80%;
-  margin-bottom: 60px;
+ 
 
   & .column {
- 
+    width: 33.333%;
 
     &:last-child {
       justify-content: flex-end;

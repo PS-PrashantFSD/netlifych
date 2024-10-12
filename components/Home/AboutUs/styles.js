@@ -232,17 +232,20 @@ export const Wrap = styled(motion.div)`
     font-size: 6rem; /* Adjust as needed */
     text-align: left; /* Align text to the left */
     transition: transform 0.3s;
+    color : ${({ theme }) => theme.colors.red};
+
 
     &:hover {
       transform: scale(1.05); /* Slightly enlarge on hover */
     }
   }
 
-  & h2 {
+  & p {
     grid-column: span 2; 
     font-size: 1.5rem; 
     text-align: left; 
     transition: color 0.3s;
+    color: ${({ theme }) => theme.colors.red};
 
     &:hover {
       color: white; 

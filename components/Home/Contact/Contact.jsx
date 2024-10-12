@@ -10,7 +10,9 @@ const Contact = () => {
 
   return (
     <AnimateOnScreen>
+      <AnimateOnScreen>
       <Forms/>
+      </AnimateOnScreen>
       <ContactSection>
         
         <div className="column">

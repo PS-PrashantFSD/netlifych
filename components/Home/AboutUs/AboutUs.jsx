@@ -125,13 +125,13 @@ const AboutUs = () => {
       {/* About Description */}
       <AnimateOnScreen>
         <AboutDescription>
-          <h2>
+          <p>
             We are trailblazers in visual technology, specializing in augmented reality applications 
             and web application design. Our mission is to revolutionize visual experiences, bridging 
             the gap between the physical and digital worlds. With cutting-edge solutions like image 
             tracking, 3D image tracking, and avatar creation, we empower businesses and creators to 
             redefine how we interact with the visual world.
-          </h2>
+          </p>
           
         </AboutDescription>
       </AnimateOnScreen>
@@ -140,20 +140,20 @@ const AboutUs = () => {
         <h1>
             Our Mission
           </h1>
-          <h2>
-          Contribute to our community by pioneering innovative solutions that enhance everyday experiences. 
+          <p>
+          <strong>Contribute to our community by pioneering innovative solutions that enhance everyday experiences. </strong>
           We are dedicated to delivering unparalleled value to our customers, guided by principles of 
           integrity, sustainability, and continuous improvement.
-          </h2>
+          </p>
           
           <h1>
             Our Vision
           </h1>
-          <h2>
-          Empower positive change through cutting-edge technologies. Our vision is to be the 
-          leading force in our industry, 
+          <p>
+          Empower positive change through cutting-edge technologies. <strong>Our vision is to be the 
+          leading force in our industry, </strong>
           driving global impact and inspiring a future where possibilities are limitless.
-          </h2>
+          </p>
         </Wrap>
       </AnimateOnScreen>
       
