@@ -6,20 +6,19 @@ import { secondaryFontStyle } from '../../../styles/shared/text';
 export const ContactSection = styled(motion.section)`
   ${containerStyles};
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start; /* Align items at the top */
   justify-content: space-between;
-  padding: 0 0px 200px;
+  padding: 0 0 200px;
   color: ${({ theme }) => theme.colors.red};
-  /* opacity: 1; */
   transform: translate3d(0, 60px, 0);
-  /* transition: opacity 1s ease, transform 1s cubic-bezier(0, 0.7, 0.29, 0.97);
-  transition-delay: 0.3s; */
-  /* will-change: opacity, transform; */
-  width: 100%;
+  width: 70%; /* Adjusted to full width */
 
   & .column {
-    width: 33.333%;
-
+    width: 30%; /* Adjusted for better alignment */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    
     &:last-child {
       justify-content: flex-end;
     }
@@ -39,29 +38,44 @@ export const ContactSection = styled(motion.section)`
     padding: 0 8px;
   }
 
+  & .contact-form {
+    display: flex;
+    flex-direction: column;
+
+    & input,
+    & textarea {
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid ${({ theme }) => theme.colors.gray};
+      border-radius: 4px;
+    }
+
+    & button {
+      padding: 10px;
+      background-color: ${({ theme }) => theme.colors.red};
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.darkRed};
+      }
+    }
+  }
+
   ${({ theme }) => theme.breakpoints.medium`
     & .column {
-      width: 41.666%;
-
-      &:last-child {
-        width: 16.666%;
-      }
+      width: 30%; /* Maintain consistent widths */
     }
   `};
 
   ${({ theme }) => theme.breakpoints.small`
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
 
     & .column {
-      width: 100%;
-
-      &:last-child {
-        width: 100%;
-        justify-content: flex-start;
-        padding: 1px 0;
-      }
+      width: 100%; /* Full width on small screens */
     }
 
     & address {
@@ -70,7 +84,7 @@ export const ContactSection = styled(motion.section)`
   `};
 
   ${({ theme }) => theme.breakpoints.tablet`
-    padding: 0 0px 60px;
+    padding: 0 0 60px;
 
     & address {
       padding: 17px 0 42px;

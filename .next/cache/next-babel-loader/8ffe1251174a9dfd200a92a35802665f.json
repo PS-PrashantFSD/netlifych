@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { css } from 'styled-components';\nexport default css`\n  max-width: 1234px;\n  padding: 0 32px;\n  margin: 0 auto;\n`;","map":null,"metadata":{},"sourceType":"module"}

@@ -130,7 +130,7 @@ const FeaturedProject = () => {
           <Link href="/services" passHref>
             <MenuButton
               sticky={false}
-              title="View More"
+              title="Services"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             />

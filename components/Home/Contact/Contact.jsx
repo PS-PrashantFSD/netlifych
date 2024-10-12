@@ -11,6 +11,8 @@ const Contact = () => {
     <AnimateOnScreen>
       <ContactSection>
         <div className="column">
+          <h2 style={{ color: 'white'}}>Get in Touch</h2>
+          <p style={{ color: 'white'}}>If you have any questions or would like to work together, feel free to reach out!</p>
           <a
             className="contact-text"
             href="tel:+1.902.417.0634"
@@ -29,10 +31,23 @@ const Contact = () => {
             info@luminexa.in
           </a>
         </div>
-        <address className="column contact-text">
-          14 1st Stage Bhanashankari<br /> Bangalore, KA IN
-        </address>
-        <SocialMedia className="column" />
+        
+        <div className="column">
+          <SocialMedia />
+          <address className="contact-text">
+            14 1st Stage Bhanashankari<br /> Bangalore, KA IN
+          </address>
+        </div>
+        
+        <div className="column">
+          <form className="contact-form">
+            <h3>Contact Form</h3>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </ContactSection>
     </AnimateOnScreen>
   );

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { css } from 'styled-components';\nexport const secondaryFontStyle = css`\n  font-family: presicav, sans-serif;\n  font-weight: 700;\n  font-size: 1.25rem;\n  line-height: 1.15;\n`;","map":null,"metadata":{},"sourceType":"module"}

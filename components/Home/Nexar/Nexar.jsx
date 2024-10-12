@@ -3,7 +3,7 @@ import Link from 'next/link';
 import useCursorStyle from '../../../hooks/useCursorStyle';
 import Cards from './../../Misc/Cards';
 import Arrow from '../../Icons/Arrow';
-import Contact from './../../Home/Contact';
+import Contact from './../../Home/Contacts';
 import {
   ContentSection,
   TextWrapper,
