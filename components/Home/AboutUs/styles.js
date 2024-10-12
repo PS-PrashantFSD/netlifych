@@ -245,7 +245,7 @@ export const Wrap = styled(motion.div)`
     font-size: 1.5rem; 
     text-align: left; 
     transition: color 0.3s;
-    color: ${({ theme }) => theme.colors.red};
+    color: white;
 
     &:hover {
       color: white; 
