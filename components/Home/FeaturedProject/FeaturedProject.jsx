@@ -111,16 +111,6 @@ const FeaturedProject = () => {
               onHoverEnd={handleAnchorHoverEnd}
             >
               <ProjectInfo>
-                <h3>{currentWord}</h3>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={controlsInfo}
-                  transition={transition}
-                  className="project-info"
-                >
-                  <h4>Join Us on a Journey</h4>
-                  <h4>003</h4>
-                </motion.div>
                 <ProjectTitle>
                   GET <br /> STARTED
                   <span className="arrow">
@@ -129,7 +119,7 @@ const FeaturedProject = () => {
                 </ProjectTitle>
               </ProjectInfo>
               <VideoPreview>
-                <video loop autoPlay muted src="videos/featured-video.mp4" />
+                <video loop autoPlay muted src="videos/vidm.mp4" />
               </VideoPreview>
             </ProjectAnchor>
           </Link>

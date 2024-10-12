@@ -294,7 +294,7 @@ export const Text2 = styled.div`
 
   ${({ theme }) => theme.breakpoints.small`
     width: 100%;
-    margin-left: 0;
+    
   `};
 `;
 

@@ -59,7 +59,7 @@ const Nexar = () => {
         </Text2>
       </Text1>
       <TextWrapper>
-      <Cards />
+      
         <div>
         <img src="nexars.png" alt="Description of the image"  style={{ width: '300px', height: 'auto' , marginBottom: '20PX'}}/>
         
@@ -73,6 +73,7 @@ const Nexar = () => {
           systems for smart recognition.
           </p>
         </div>
+        <Cards />
         
       </TextWrapper>
         <h1 style={{ fontSize: '80px' }}>
