@@ -311,6 +311,7 @@ export const Text3 = styled.div`
   ${({ theme }) => theme.breakpoints.tablet`
     font-size: 1.5rem;
     line-height: 1;
+    display: block;
 
     & br {
       display: none;

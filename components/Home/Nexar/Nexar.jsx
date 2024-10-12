@@ -62,6 +62,7 @@ const Nexar = () => {
       <Cards />
         <div>
         <img src="nexars.png" alt="Description of the image"  style={{ width: '300px', height: 'auto' , marginBottom: '20PX'}}/>
+        
           <h2>
           Our target is to revolutionize visual experiences, 
           bridging the gap between the physical and digital worlds

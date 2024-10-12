@@ -82,11 +82,11 @@ const StyledWrapper = styled.div`
     margin-top: 1rem;
     display: inline-block;
     font-weight: 900;
-    font-size: 9px;
+    font-size: 16px;
     text-transform: uppercase;
     color: black;
     background: white;
-    padding: 0.5rem 0.7rem;
+    padding: 1rem 2rem;
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 20px);
   }
