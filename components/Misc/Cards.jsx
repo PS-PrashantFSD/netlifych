@@ -11,7 +11,7 @@ const Card = () => {
         <div className="btn4" />
         <div className="card-int">
           <div className="hello">
-            .  . .
+            .  .  .
             <span className="hidden">nexAR</span>
           </div>
         </div>
