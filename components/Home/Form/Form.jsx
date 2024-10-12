@@ -91,7 +91,7 @@ const Input = styled.input`
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 1rem;
 
   &:focus {
@@ -104,7 +104,7 @@ const TextArea = styled.textarea`
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 1rem;
   resize: none;
 
@@ -117,7 +117,7 @@ const TextArea = styled.textarea`
 const SubmitButton = styled.button`
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: ${({ theme }) => theme.colors.red};
   color: white;
   cursor: pointer;
@@ -136,7 +136,7 @@ const ContactForm = () => {
         <h1 style={{fontSize: '90px'}}>Contact Us</h1>
           <p style={{ color:'white'}}>nexAR - Augmented Reality finds diverse applicatons across marketing and advertising, 
               retail and e-commerce</p>
-          <p><strong>© Luminexa Technologies. Pioneering in web and augmented reality solutions,</strong> 
+          <p style={{ color: 'white'}}><strong>© Luminexa Technologies. Pioneering in web and augmented reality solutions,</strong> 
               we are dedicated to transforming digital experiences. Connect with us for innovative, 
               custom-tailored technology services that drive your business forward.</p>
         </address>

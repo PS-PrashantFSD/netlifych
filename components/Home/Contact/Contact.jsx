@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="column">
           <a
             className="contact-text"
-            href="tel:+1.902.417.0634"
+            href="tel:+918660449970"
             onMouseEnter={addCursorBorder}
             onMouseLeave={removeCursorBorder}
           >
@@ -27,7 +27,7 @@ const Contact = () => {
           <br />
           <a
             className="contact-text"
-            href="mailto:info@furrow.studio"
+            href="mailto:info@luminexa.in"
             onMouseEnter={addCursorBorder}
             onMouseLeave={removeCursorBorder}
           >
