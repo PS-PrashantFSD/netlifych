@@ -4,6 +4,7 @@ import useCursorStyle from '../../../hooks/useCursorStyle';
 import Card from './../../Misc/Card';
 import Arrow from '../../Icons/Arrow';
 import Contact from './../../Home/Contacts';
+import AnimateOnScreen from './../../AnimateOnScreen'
 import {
   ContentSection,
   TextWrapper,
@@ -29,7 +30,6 @@ const Services = () => {
   };
 
   return (
-    <div>
     <ContentSection>
       <Link href="/services" passHref>
         <ProjectAnchor
@@ -84,12 +84,11 @@ const Services = () => {
 solutions to engage their audience more effectively. Traditional methods often fail to capture attention and provide
 interactive experiences. Luminexa addresses this gap by leveraging Augmented Reality (AR) & Mixed Realty (XR) to
 enhance user engagement and interaction.</p>
-      
-    </ContentSection>
+<AnimateOnScreen>
     <Contact/>
-   
-
-    </div>
+    </AnimateOnScreen>
+    </ContentSection>
+  
   );
 };
 

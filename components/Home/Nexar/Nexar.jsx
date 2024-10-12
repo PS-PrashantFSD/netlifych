@@ -4,6 +4,7 @@ import useCursorStyle from '../../../hooks/useCursorStyle';
 import Cards from './../../Misc/Cards';
 import Arrow from '../../Icons/Arrow';
 import Contact from './../../Home/Contacts';
+import AnimateOnScreen from './../../AnimateOnScreen'
 import {
   ContentSection,
   TextWrapper,
