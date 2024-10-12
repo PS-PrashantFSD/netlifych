@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Form';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/Home/Form/index.js"],"sourcesContent":["export { default } from './Form';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,QAAQ","ignoreList":[]},"metadata":{},"sourceType":"module"}
