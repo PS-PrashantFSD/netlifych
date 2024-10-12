@@ -5,7 +5,7 @@ import useCursorStyle from '../../../hooks/useCursorStyle';
 import useMediaQuery from '../../../hooks/useMediaQuery';
 import AnimateOnScreen from '../../AnimateOnScreen';
 import Arrow from '../../Icons/Arrow';
-import Contact from './../../Home/Contact';
+import Contact from './../../Home/Contacts';
 import {
   ContentSection,
   ProjectAnchor,

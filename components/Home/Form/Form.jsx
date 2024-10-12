@@ -13,9 +13,10 @@ const ContactSection = styled(motion.section)`
   color: ${({ theme }) => theme.colors.red};
   transform: translate3d(0, 60px, 0);
   width: 80%;
+  margin-bottom: 60px;
 
   & .column {
-    width: 33.333%;
+ 
 
     &:last-child {
       justify-content: flex-end;
@@ -132,7 +133,7 @@ const ContactForm = () => {
     <ContactSection>
         <div className="column">
         <address>
-        <h1 style={{fontSize: '130px'}}>Contact Us</h1>
+        <h1 style={{fontSize: '90px'}}>Contact Us</h1>
           <p style={{ color:'white'}}>nexAR - Augmented Reality finds diverse applicatons across marketing and advertising, 
               retail and e-commerce</p>
           <p><strong>© Luminexa Technologies. Pioneering in web and augmented reality solutions,</strong> 
