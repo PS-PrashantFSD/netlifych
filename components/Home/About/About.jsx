@@ -42,10 +42,10 @@ const About = () => {
           bridging the gap between the physical and digital worlds.
           </h2>
           <p>
-          At our company, we specialize in a range of cutting-edge digital solutions. 
+          We specialize in a range of cutting-edge digital solutions. 
           Our services include advanced Augmented Reality software that transforms your 
           digital interactions, comprehensive Web Development to create user friendly online 
-          platforms, innovative Image Tracking And Object detection system designed to streamline 
+          platforms, <strong>innovative Image Tracking And Object detection</strong> system designed to streamline 
           processes through smart recognition.
           </p>
         </TextWrapper>
