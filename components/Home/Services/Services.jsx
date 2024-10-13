@@ -95,5 +95,4 @@ enhance user engagement and interaction.</p>
   </div>
   );
 };
-
 export default React.memo(Services);
