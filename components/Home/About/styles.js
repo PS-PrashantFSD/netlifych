@@ -20,7 +20,7 @@ export const ContentSection = styled(motion.section)`
 `;
 
 export const TextWrapper = styled.div`
-  margin-left: 8.33%;
+  
   width: 58.333%;
 
   & h2 {

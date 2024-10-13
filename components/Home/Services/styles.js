@@ -19,9 +19,9 @@ export const ContentSection = styled(motion.section)`
 
 export const ProjectAnchor = styled(motion.a)`
   display: block;
-  width: 0%;
+
   height: 350px;
-  margin: 0; /* Adjusted margin-bottom for less gap */
+  
 
   ${({ theme }) => theme.breakpoints.tablet`
     height: 190px;
@@ -46,7 +46,7 @@ export const Text = styled.h2`
 `;
 
 export const ProjectInfo = styled(motion.div)`
-  margin-left: 8.333%;
+  
   width: 83.333%;
   position: relative;
 

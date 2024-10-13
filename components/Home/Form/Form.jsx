@@ -24,7 +24,7 @@ const ContactSection = styled(motion.section)`
 `;
 
 const TextWrapper = styled.div`
-  margin-left: 8.33%;
+  
   width: 58.333%;
 
   & h1 {

@@ -9,6 +9,8 @@ export const ContentSection = styled(motion.section)`
   display: block;
   margin-top: 200px;
 
+  
+
   ${({ theme }) => theme.breakpoints.tablet`
     margin-top: 100px;
   `};

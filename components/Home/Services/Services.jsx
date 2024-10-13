@@ -3,7 +3,7 @@ import Link from 'next/link';
 import useCursorStyle from '../../../hooks/useCursorStyle';
 import Card from './../../Misc/Card';
 import Arrow from '../../Icons/Arrow';
-import Contact from './../../Home/Contacts';
+import Contact from './../../Home/Contact';
 import AnimateOnScreen from './../../AnimateOnScreen'
 import {
   ContentSection,
@@ -30,6 +30,7 @@ const Services = () => {
   };
 
   return (
+    <div>
     <ContentSection>
       <Link href="/services" passHref>
         <ProjectAnchor
@@ -53,7 +54,7 @@ const Services = () => {
           <Text3>
           We offer a range of services tailored to meet the unique needs of our clients, 
           including web development, augmented reality solutions, and innovative design services. 
-          Our team is dedicated to delivering exceptional results that drive success and engagement.
+          
           </Text3>
         </Text2>
       </Text1>
@@ -84,11 +85,14 @@ const Services = () => {
 solutions to engage their audience more effectively. Traditional methods often fail to capture attention and provide
 interactive experiences. Luminexa addresses this gap by leveraging Augmented Reality (AR) & Mixed Realty (XR) to
 enhance user engagement and interaction.</p>
-<AnimateOnScreen>
-    <Contact/>
-    </AnimateOnScreen>
+
     </ContentSection>
-  
+  <AnimateOnScreen>
+  <Contact/>
+  </AnimateOnScreen>
+
+
+  </div>
   );
 };
 

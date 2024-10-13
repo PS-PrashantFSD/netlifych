@@ -5,7 +5,7 @@ import useCursorStyle from '../../../hooks/useCursorStyle';
 import useMediaQuery from '../../../hooks/useMediaQuery';
 import AnimateOnScreen from '../../AnimateOnScreen';
 import Arrow from '../../Icons/Arrow';
-import Contact from './../../Home/Contacts';
+import Contact from './../../Home/Contact';
 import {
   ContentSection,
   ProjectAnchor,
@@ -88,6 +88,8 @@ const AboutUs = () => {
   }, [controlsArrow, isTabletView]);
 
   return (
+    <div>
+    
     <ContentSection>
       <AnimateOnScreen>
         <motion.div>
@@ -157,10 +159,15 @@ const AboutUs = () => {
         </Wrap>
       </AnimateOnScreen>
       
-      <AnimateOnScreen>
-        <Contact />
-      </AnimateOnScreen>
+      
+        
+      
     </ContentSection>
+    <AnimateOnScreen>
+    <Contact />
+    </AnimateOnScreen>
+      
+    </div>
   );
 };
 
