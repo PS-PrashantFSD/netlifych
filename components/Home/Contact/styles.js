@@ -5,8 +5,9 @@ import { secondaryFontStyle } from '../../../styles/shared/text';
 export const FooterContainer = styled(motion.footer)`
   display: flex;
   flex-direction: column;
-  align-items: center; // Center items horizontally
-  padding: 40px 20px;
+  align-items: center;
+
+  padding: 40px 0;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.red};
 
@@ -16,50 +17,50 @@ export const FooterContainer = styled(motion.footer)`
   }
 
   & .description {
-    text-align: center; // Center description
+    text-align: center;
     margin-bottom: 40px;
     ${secondaryFontStyle};
   }
 
   & .contact-info {
     display: flex;
-    flex-wrap: wrap; // Allow wrapping on smaller screens
-    justify-content: flex-start; // Align items to the start
+    flex-wrap: wrap; 
+    justify-content: flex-start;
     width: 100%;
-    max-width: 800px; // Limit the width for better readability
+    max-width: 800px; 
     margin-bottom: 20px;
 
     & .column {
       flex: 1;
-      text-align: center; // Center text in columns
-      ${secondaryFontStyle}; // Include secondary font style
-      margin-bottom: 10px; // Add spacing between rows on smaller screens
+      text-align: center; 
+      ${secondaryFontStyle}; 
+      margin-bottom: 10px; 
     }
   }
 
   & .footer-links {
-    text-align: center; // Center footer links
+    text-align: center; 
     margin-bottom: 20px;
 
     & a {
-      color: ${({ theme }) => theme.colors.red}; // Link color
-      text-decoration: none; // Remove underline
-      margin: 0 10px; // Spacing between links
+      color: ${({ theme }) => theme.colors.red}; 
+      text-decoration: none; 
+      margin: 0 10px; 
 
       &:hover {
-        text-decoration: underline; // Underline on hover
+        text-decoration: underline; 
       }
     }
   }
 
   & .social-media {
     margin-bottom: 20px;
-    align-self: center; // Center social media
+    align-self: center; 
   }
 
   & .footer-note {
     font-size: 14px;
-    align-self: center; // Center footer note
+    align-self: center; 
   }
 
   // Media queries for responsive design
@@ -68,10 +69,20 @@ export const FooterContainer = styled(motion.footer)`
 
     & .contact-info {
       flex-direction: column; // Stack columns on smaller screens
+      align-items: center; // Center align items in the column
     }
 
     & .column {
+      width: 100%; // Make columns take full width
       margin-bottom: 15px; // Adjust spacing for smaller screens
+      text-align: center; // Ensure text is centered
+    }
+
+    & .footer-links,
+    & .social-media,
+    & .footer-note {
+      width: 100%; // Ensure links and notes take full width
+      text-align: center; // Center align text
     }
   }
 `;

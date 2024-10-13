@@ -13,7 +13,7 @@ const ContactSection = styled(motion.section)`
   width: 100%;
 
   ${({ theme }) => theme.breakpoints.medium`
-    width: 100%;
+    width: 80%;
   `};
 
   ${({ theme }) => theme.breakpoints.small`
@@ -24,21 +24,18 @@ const ContactSection = styled(motion.section)`
 `;
 
 const TextWrapper = styled.div`
-  
+  margin-left: 8.33%;
   width: 58.333%;
 
   & h1 {
     font-size: 90px;
     color: white;
-    margin-bottom: 6px
   }
 
   & p {
-    grid-column: span 2; 
-    font-size: 1.5rem; 
-    text-align: left; 
-    transition: color 0.3s;
     color: white;
+    line-height: 1.5;
+    margin: 10px 0;
   }
 
   ${({ theme }) => theme.breakpoints.small`
@@ -48,7 +45,7 @@ const TextWrapper = styled.div`
 `;
 
 const FormWrapper = styled.div`
-
+  margin-left: 8.33%;
   width: 33.333%;
 
   ${({ theme }) => theme.breakpoints.small`
@@ -108,7 +105,7 @@ const ContactForm = () => {
   return (
     <ContactSection>
       <TextWrapper>
-        <h1 style={{fontSize: '69px'}}>Contact Us</h1>
+        <h1>Contact Us</h1>
         <p>
           nexAR - Augmented Reality finds diverse applications across marketing and advertising,
           retail and e-commerce.

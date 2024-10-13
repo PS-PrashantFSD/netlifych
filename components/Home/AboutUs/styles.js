@@ -233,7 +233,7 @@ export const Wrap = styled(motion.div)`
     text-align: left; /* Align text to the left */
     transition: transform 0.3s;
     color : ${({ theme }) => theme.colors.red};
-    margin-bottom: 6px
+    
 
 
     &:hover {
