@@ -1,85 +1,49 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import containerStyles from '../../../styles/shared/container';
 import { secondaryFontStyle } from '../../../styles/shared/text';
 
-export const ContactSection = styled(motion.section)`
-  ${containerStyles};
+export const FooterContainer = styled(motion.footer)`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0px 200px;
+  flex-direction: column;
+  align-items: center; // Corrected to align-items for centering
+  padding: 40px 20px;
+  background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.red};
-  /* opacity: 1; */
-  transform: translate3d(0, 60px, 0);
-  /* transition: opacity 1s ease, transform 1s cubic-bezier(0, 0.7, 0.29, 0.97);
-  transition-delay: 0.3s; */
-  /* will-change: opacity, transform; */
-  width: 72%;
 
-  & .column {
-    width: 33.333%;
-
-    &:last-child {
-      justify-content: flex-end;
-    }
-
-    & a:hover {
-      color: ${({ theme }) => theme.text};
-    }
+  & .logo {
+    margin-bottom: 20px;
+    align-self: center; // Center logo
   }
 
-  & .contact-text {
+  & .description {
+    text-align: center; // Center description
+    margin-bottom: 40px;
     ${secondaryFontStyle};
-    line-height: 28px;
-    display: inline-block;
   }
 
-  & address {
-    padding: 0 8px;
+  & .contact-info {
+    display: flex;
+    flex-wrap: wrap; // Allow wrapping on smaller screens
+    justify-content: center; // Center contact info
+    width: 100%;
+    max-width: 800px; // Limit the width for better readability
+    margin-bottom: 20px;
+
+    & .column {
+      flex: 1;
+      text-align: center; // Center text in columns
+      ${secondaryFontStyle}; // Include secondary font style
+      margin-bottom: 10px; // Add spacing between rows on smaller screens
+    }
   }
 
-  ${({ theme }) => theme.breakpoints.medium`
-    & .column {
-      width: 41.666%;
+  & .social-media {
+    margin-bottom: 20px;
+    align-self: center; // Center social media
+  }
 
-      &:last-child {
-        width: 16.666%;
-      }
-    }
-  `};
-
-  ${({ theme }) => theme.breakpoints.small`
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 79%;
-
-    & .column {
-      width: 100%;
-
-      &:last-child {
-        width: 100%;
-        justify-content: flex-start;
-        padding: 1px 0;
-      }
-    }
-
-    & address {
-      padding: 0;
-    }
-  `};
-
-  ${({ theme }) => theme.breakpoints.tablet`
-    padding: 0 0px 60px;
-
-    & address {
-      padding: 17px 0 42px;
-    }
-
-    & .contact-text {
-      font-size: 1.125rem;
-      line-height: 21px;
-    }
-  `};
+  & .footer-note {
+    font-size: 14px;
+    align-self: center; // Center footer note
+  }
 `;

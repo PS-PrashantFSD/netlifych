@@ -36,7 +36,7 @@ const About = () => {
     <AnimateOnScreen>
       <ContentSection>
         <TextWrapper>
-          <h1>About Us</h1>
+          <h1 style={{fontSize: '99px'}}>About Us</h1>
           <h2>
           Our mission is to revolutionize visual experiences, 
           bridging the gap between the physical and digital worlds.

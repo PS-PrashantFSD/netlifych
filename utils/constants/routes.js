@@ -26,7 +26,7 @@ export default [
   {
     id: '50-beaches',
     title: 'Contact Us',
-    path: '/conatct',
+    path: '/terms',
     video: '',
   },
 ];

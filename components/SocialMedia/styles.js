@@ -4,7 +4,7 @@ import { secondaryFontStyle } from '../../styles/shared/text';
 export const Container = styled.div`
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end; /* Changed from flex-start to flex-end */
   margin-right: -10px;
 
   ${({ theme }) => theme.breakpoints.small`

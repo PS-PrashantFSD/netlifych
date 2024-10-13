@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Terms';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/Home/Terms/index.js"],"sourcesContent":["export { default } from './Terms';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,SAAS","ignoreList":[]},"metadata":{},"sourceType":"module"}

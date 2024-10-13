@@ -7,77 +7,50 @@ import { secondaryFontStyle } from '../../../styles/shared/text';
 const ContactSection = styled(motion.section)`
   ${containerStyles};
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0px 200px;
-  color: ${({ theme }) => theme.colors.red};
-  transform: translate3d(0, 60px, 0);
-  width: 80%;
- 
-
-  & .column {
-    width: 33.333%;
-
-    &:last-child {
-      justify-content: flex-end;
-    }
-
-    & a:hover {
-      color: ${({ theme }) => theme.text};
-    }
-  }
-
-  & .contact-text {
-    ${secondaryFontStyle};
-    line-height: 28px;
-    display: inline-block;
-  }
-
-  & address {
-    padding: 0 8px;
-  }
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 200px;
+  width: 100%;
 
   ${({ theme }) => theme.breakpoints.medium`
-    & .column {
-      width: 41.666%;
-
-      &:last-child {
-        width: 16.666%;
-      }
-    }
+    width: 80%;
   `};
 
   ${({ theme }) => theme.breakpoints.small`
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-
-    & .column {
-      width: 100%;
-
-      &:last-child {
-        width: 100%;
-        justify-content: flex-start;
-        padding: 1px 0;
-      }
-    }
-
-    & address {
-      padding: 0;
-    }
+    width: 100%;
   `};
+`;
 
-  ${({ theme }) => theme.breakpoints.tablet`
-    padding: 0 0px 60px;
+const TextWrapper = styled.div`
+  margin-left: 8.33%;
+  width: 58.333%;
 
-    & address {
-      padding: 17px 0 42px;
-    }
+  & h1 {
+    font-size: 90px;
+    color: white;
+  }
 
-    & .contact-text {
-      font-size: 1.125rem;
-      line-height: 21px;
-    }
+  & p {
+    color: white;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+
+  ${({ theme }) => theme.breakpoints.small`
+    margin-left: 0;
+    width: 100%;
+  `};
+`;
+
+const FormWrapper = styled.div`
+  margin-left: 8.33%;
+  width: 33.333%;
+
+  ${({ theme }) => theme.breakpoints.small`
+    margin-left: 0;
+    width: 100%;
   `};
 `;
 
@@ -131,28 +104,29 @@ const SubmitButton = styled.button`
 const ContactForm = () => {
   return (
     <ContactSection>
-        <div className="column">
-        <address>
-        <h1 style={{fontSize: '90px'}}>Contact Us</h1>
-          <p style={{ color:'white'}}>nexAR - Augmented Reality finds diverse applicatons across marketing and advertising, 
-              retail and e-commerce</p>
-          <p style={{ color: 'white'}}><strong>© Luminexa Technologies. Pioneering in web and augmented reality solutions,</strong> 
-              we are dedicated to transforming digital experiences. Connect with us for innovative, 
-              custom-tailored technology services that drive your business forward.</p>
-        </address>
-
-      </div>
-      <div className="column">
-        
-        <p style={{ marginBottom:'10px'}}>We'd love to hear <strong>from you!</strong></p>
+      <TextWrapper>
+        <h1 style={{fontSize: '99px'}}>Contact Us</h1>
+        <p>
+          nexAR - Augmented Reality finds diverse applications across marketing and advertising,
+          retail and e-commerce.
+        </p>
+        <p>
+          <strong>© Luminexa Technologies.</strong> Pioneering in web and augmented reality solutions,
+          we are dedicated to transforming digital experiences. Connect with us for innovative,
+          custom-tailored technology services that drive your business forward.
+        </p>
+      </TextWrapper>
+      <FormWrapper>
+        <p style={{ marginBottom: '10px' }}>
+          We'd love to hear <strong>from you!</strong>
+        </p>
         <Form>
           <Input type="text" placeholder="Your Name" required />
           <Input type="email" placeholder="Your Email" required />
           <TextArea rows="5" placeholder="Your Message" required />
           <SubmitButton type="submit">Send Message</SubmitButton>
         </Form>
-      </div>
-      
+      </FormWrapper>
     </ContactSection>
   );
 };

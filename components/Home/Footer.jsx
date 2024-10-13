@@ -14,16 +14,7 @@ const Footer = () => {
 
   return (
     <AppBar
-      key={isTabletView}
-      direction="up"
-      renderAs="footer"
-      variants={variants}
-      initial={false}
-      custom={isTabletView}
-      transition={{
-        duration: 0.7,
-        ease: [0.666, 0, 0.237, 1],
-      }}
+      
     />
   );
 };

@@ -1,46 +1,43 @@
 import React from 'react';
-import useCursorStyle from '../../../hooks/useCursorStyle';
-import AnimateOnScreen from '../../AnimateOnScreen';
-import SocialMedia from '../../SocialMedia';
-import { ContactSection } from './styles';
-import Forms from './../Form'
+import { FooterContainer } from './styles'; // Import the styled component
+import SocialMedia from '../../SocialMedia'; // Ensure you have a SocialMedia component
+import AnimationonScreen from './../../AnimateOnScreen'
+import Form from './../../Home/Form'
 
-const Contact = () => {
-  const { addCursorBorder, removeCursorBorder } = useCursorStyle();
-
+const Footer = () => {
   return (
-    <AnimateOnScreen>
-      <AnimateOnScreen>
-      <Forms/>
-      </AnimateOnScreen>
-      <ContactSection>
-        
-        <div className="column">
-          <a
-            className="contact-text"
-            href="tel:+918660449970"
-            onMouseEnter={addCursorBorder}
-            onMouseLeave={removeCursorBorder}
-          >
-            +91.866.044.9970
-          </a>
-          <br />
-          <a
-            className="contact-text"
-            href="mailto:info@luminexa.in"
-            onMouseEnter={addCursorBorder}
-            onMouseLeave={removeCursorBorder}
-          >
-            info@luminexa.in
-          </a>
+    <FooterContainer>
+      <AnimationonScreen>
+        <Form/>
+      </AnimationonScreen>
+      <div className="logo">
+        <img src="logo.png" alt="Logo" style={{ width: '160px'}}/> {/* Replace with your logo path */}
+      </div>
+      <div>
+        <p>Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>
+      </div>
+      <div className="contact-info">
+        <div className="column contact-text">
+        <p>Address: 14 1st Stage Bhanashankari, Bangalore, KA IN</p>
         </div>
-        <address className="column contact-text">
-          14 1st Stage Bhanashankari<br /> Bangalore, KA IN
-        </address>
-        <SocialMedia className="column" />
-      </ContactSection>
-    </AnimateOnScreen>
+        <div className="column contact-text">
+        <p>Phone: +91.866.044.9970</p>
+        </div>
+      </div>
+      <div className="contact-info">
+        <div className="column contact-text">
+          <p>Email: info@luminexa.in</p>
+        </div>
+        
+      </div>
+      <div className="social-media">
+        <SocialMedia />
+      </div>
+      <div className="footer-note">
+        <p>@luminexa 2024</p>
+      </div>
+    </FooterContainer>
   );
 };
 
-export default React.memo(Contact);
+export default React.memo(Footer);
