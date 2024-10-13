@@ -65,7 +65,7 @@ export const FooterContainer = styled(motion.footer)`
 
   // Media queries for responsive design
   @media (max-width: 600px) {
-    padding: 20px 10px;
+    padding: 20px;
 
     & .contact-info {
       flex-direction: column; // Stack columns on smaller screens
@@ -73,8 +73,7 @@ export const FooterContainer = styled(motion.footer)`
     }
 
     & .column {
-      width: 100%; // Make columns take full width
-      margin-bottom: 15px; // Adjust spacing for smaller screens
+      width: 100%; // Adjust spacing for smaller screens
       text-align: center; // Ensure text is centered
     }
 
