@@ -39,13 +39,11 @@ const TextWrapper = styled.div`
   }
 
   ${({ theme }) => theme.breakpoints.small`
-    margin-left: 0;
     width: 100%;
   `};
 `;
 
 const FormWrapper = styled.div`
-  margin-left: 8.33%;
   width: 33.333%;
 
   ${({ theme }) => theme.breakpoints.small`

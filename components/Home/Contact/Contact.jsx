@@ -18,12 +18,12 @@ const Footer = () => {
           <p>Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>
         </div>
         <div className="contact-info">
-          <div className="column contact-text1" style={{margin: '20px'}}>
+          <div className="column contact-text1" >
             <p>Address: 14 1st Stage Bhanashankari, Bangalore, KA IN</p>
           </div>
           {/* Image inserted here */}
-          <h1 style={{margin: '10px'}}>nex</h1>{/* Adjust path and styles as needed */}
-          <div className="column contact-text" style={{margin: '20px'}}>
+          <h1 >nex</h1>{/* Adjust path and styles as needed */}
+          <div className="column contact-text">
             <p>Phone: +91.866.044.9970 <br /> Email: info@luminexa.in</p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
           <SocialMedia />
         </div>
         <div className="footer-note">
-          <p>@luminexa 2024</p>
+          <p style={{color: 'gray'}}>@luminexa 2024</p>
         </div>
       </FooterContainer>
     </AnimationonScreen>

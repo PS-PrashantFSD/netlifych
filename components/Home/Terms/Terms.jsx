@@ -11,6 +11,7 @@ import Contact from '../Contacts';
 
 const TermsAndConditions = () => {
   return (
+    <div>
     <ContentSection>
       <AnimateOnScreen>
         <Wrap>
@@ -76,7 +77,10 @@ const TermsAndConditions = () => {
           <Contact/>
       </AnimateOnScreen>
     </ContentSection>
-
+     <AnimateOnScreen>
+     <Contact />
+     </AnimateOnScreen>
+     </div>
   );
 };
 

@@ -10,6 +10,7 @@ export const FooterContainer = styled(motion.footer)`
   padding: 40px 0;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.red};
+  
 
   & .logo {
     margin-bottom: 20px;
