@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Privacy';","map":{"version":3,"names":["default"],"sources":["C:/Users/Prashant/Desktop/Projects/netlifych/components/Home/Privacy/index.js"],"sourcesContent":["export { default } from './Privacy';\r\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,WAAW","ignoreList":[]},"metadata":{},"sourceType":"module"}

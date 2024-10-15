@@ -1,85 +1,89 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import containerStyles from '../../../styles/shared/container';
 import { secondaryFontStyle } from '../../../styles/shared/text';
 
-export const ContactSection = styled(motion.section)`
-  ${containerStyles};
+export const FooterContainer = styled(motion.footer)`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 0px 200px;
+
+  padding: 40px 0;
+  background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.red};
-  /* opacity: 1; */
-  transform: translate3d(0, 60px, 0);
-  /* transition: opacity 1s ease, transform 1s cubic-bezier(0, 0.7, 0.29, 0.97);
-  transition-delay: 0.3s; */
-  /* will-change: opacity, transform; */
-  width: 100%;
+  
 
-  & .column {
-    width: 33.333%;
-
-    &:last-child {
-      justify-content: flex-end;
-    }
-
-    & a:hover {
-      color: ${({ theme }) => theme.text};
-    }
+  & .logo {
+    margin-bottom: 20px;
+    align-self: center; // Center logo
   }
 
-  & .contact-text {
+  & .description {
+    text-align: center;
+    margin-bottom: 40px;
     ${secondaryFontStyle};
-    line-height: 28px;
-    display: inline-block;
   }
 
-  & address {
-    padding: 0 8px;
-  }
-
-  ${({ theme }) => theme.breakpoints.medium`
-    & .column {
-      width: 41.666%;
-
-      &:last-child {
-        width: 16.666%;
-      }
-    }
-  `};
-
-  ${({ theme }) => theme.breakpoints.small`
-    flex-direction: column;
-    align-items: flex-start;
+  & .contact-info {
+    display: flex;
+    flex-wrap: wrap; 
     justify-content: flex-start;
     width: 100%;
+    max-width: 800px; 
+    margin-bottom: 20px;
 
     & .column {
-      width: 100%;
+      flex: 1;
+      text-align: center; 
+      ${secondaryFontStyle}; 
+      margin-bottom: 10px; 
+    }
+  }
 
-      &:last-child {
-        width: 100%;
-        justify-content: flex-start;
-        padding: 1px 0;
+  & .footer-links {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    & a {
+      color: ${({ theme }) => theme.colors.red}; 
+      text-decoration: none; 
+      margin: 0 10px; 
+
+      &:hover {
+        text-decoration: underline; 
       }
     }
+  }
 
-    & address {
-      padding: 0;
+  & .social-media {
+    margin-bottom: 20px;
+    align-self: center; 
+  }
+
+  & .footer-note {
+    font-size: 14px;
+    align-self: center; 
+  }
+
+  // Media queries for responsive design
+  @media (max-width: 600px) {
+    padding: 0px;
+
+    & .contact-info {
+      flex-direction: column; // Stack columns on smaller screens
+      align-items: center; // Center align items in the column
     }
-  `};
 
-  ${({ theme }) => theme.breakpoints.tablet`
-    padding: 0 0px 60px;
-
-    & address {
-      padding: 17px 0 42px;
+    & .column {
+      width: 100%; // Adjust spacing for smaller screens
+      text-align: center; // Ensure text is centered
     }
 
-    & .contact-text {
-      font-size: 1.125rem;
-      line-height: 21px;
+    & .footer-links,
+    & .social-media,
+    & .footer-note {
+      width: 100%; // Ensure links and notes take full width
+      text-align: center; // Center align text
     }
-  `};
+  }
 `;

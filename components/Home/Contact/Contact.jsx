@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="footer-links">
           <p>
             <a href="/services">Our Services</a> | 
-            <a href="/privacy-policy"> Privacy Policy</a> | 
+            <a href="/privacy"> Privacy Policy</a> | 
             <a href="/about"> About Us</a> | 
             <a href="/terms"> Terms and Conditions</a>
           </p>
