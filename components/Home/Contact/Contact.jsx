@@ -14,9 +14,10 @@ const Footer = () => {
         <div className="logo">
           <img src="logo.png" alt="Logo" style={{ width: '160px' }} /> {/* Replace with your logo path */}
         </div>
-        <div>
+        <div style={{ textAlign: 'center', padding: '0px 20px 0px 20px' }}>
           <p>Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>
         </div>
+
         <div className="contact-info">
           <div className="column contact-text1" >
             <p>Address: 14 1st Stage Bhanashankari, Bangalore, KA IN</p>

@@ -42,6 +42,7 @@ export const FooterContainer = styled(motion.footer)`
   & .footer-links {
     text-align: center; 
     margin-bottom: 20px;
+    font-size: 14px;
 
     & a {
       color: ${({ theme }) => theme.colors.red}; 
@@ -66,7 +67,7 @@ export const FooterContainer = styled(motion.footer)`
 
   // Media queries for responsive design
   @media (max-width: 600px) {
-    padding: 20px;
+    padding: 0px;
 
     & .contact-info {
       flex-direction: column; // Stack columns on smaller screens
