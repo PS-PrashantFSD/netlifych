@@ -35,7 +35,7 @@ const TextWrapper = styled.div`
   & p {
     color: white;
     line-height: 1.5;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
   }
 
   ${({ theme }) => theme.breakpoints.small`
@@ -44,10 +44,9 @@ const TextWrapper = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  width: 33.333%;
+  width: 50%;
 
   ${({ theme }) => theme.breakpoints.small`
-    margin-left: 0;
     width: 100%;
   `};
 `;
