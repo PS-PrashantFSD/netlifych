@@ -39,7 +39,7 @@ export const Paragraph = styled.p`
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom: 20px;
-  color: gray;
+  color: #FFFFF7;
 
   ${({ theme }) => theme.breakpoints.tablet`
     font-size: 1.2rem;

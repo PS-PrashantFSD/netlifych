@@ -6,90 +6,62 @@ export const FooterContainer = styled(motion.footer)`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 40px 0;
   background-color: ${({ theme }) => theme.colors.background};
-  color: white;
-  
+  color: #878787;
+  border-top: 2px solid gray;
 
-  & .logo {
-    margin-bottom: 20px;
-    align-self: center; // Center logo
-  }
-
-  & .description {
-    text-align: center;
-    margin-bottom: 40px;
-    ${secondaryFontStyle};
-  }
-
-  & .contact-info {
+  & .footer-columns {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    max-width: 800px; 
-    margin-bottom: 20px;
+    max-width: 1200px; // Adjust max-width as needed
+    gap: 20px; // Equal gap between columns
 
     & .column {
       flex: 1;
-      text-align: center; 
-      ${secondaryFontStyle}; 
-      margin-bottom: 10px; 
-    }
-  }
+      min-width: 200px; 
+      text-align: left; 
+      color: gray;
 
-  & .footer-links {
-    text-align: center; 
-    margin-bottom: 20px;
-    font-size: 10px;
+      & h3 {
+        margin-bottom: 10px;
+      }
 
-    & a {
-      color: white; 
-      text-decoration: none; 
-      margin: 0 10px; 
+      & a {
+        margin-bottom:3px;
+        color: gray;
+        text-decoration: none;
 
-      &:hover {
-        text-decoration: underline; 
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
 
-  & .social-media {
-    margin-bottom: 20px;
-    align-self: center; 
-  }
-
   & .footer-note {
     font-size: 14px;
-    align-self: center; 
+    align-self: center;
+    margin-top: 20px;
   }
 
-  // Media queries for responsive design
+  .social-media{
+    margin-top: 10px;
+  }
+
   @media (max-width: 600px) {
-    padding: 0px;
-
-    & .contact-info {
-      flex-direction: column; 
-      align-items: center; 
-      font-size: 10px;
-    }
-
-    & p {
-        font-size: 15px;
-
+    & .footer-columns {
+      flex-direction: column; // Stack columns on smaller screens
+      align-items: center;
+      gap: 10px; // Adjust gap for mobile view if needed
     }
 
     & .column {
-      width: 100%; 
-      text-align: center; 
-    }
-
-    & .footer-links,
-    & .social-media,
-    & .footer-note {
-      width: 100%; 
-      text-align: center; 
+      width: 90%; // Make columns full width on mobile
+      margin-left: 20px;
+      margin-right: 20px
     }
   }
 `;
