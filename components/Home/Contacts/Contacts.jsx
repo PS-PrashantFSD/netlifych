@@ -2,14 +2,13 @@ import React from 'react';
 import { FooterContainer } from './styles'; // Import the styled component
 import SocialMedia from '../../SocialMedia'; // Ensure you have a SocialMedia component
 import AnimationonScreen from './../../AnimateOnScreen';
-import Form from './../../Home/Form';
 
 const Footer = () => {
   return (
     <AnimationonScreen>
       <FooterContainer>
         <div className="logo">
-          <img src="logo.png" alt="Logo" style={{ width: '160px' }} /> {/* Replace with your logo path */}
+          <img src="logo.png" alt="Logo" style={{ width: '160px'}} /> {/* Replace with your logo path */}
         </div>
         <div style={{ textAlign: 'center', padding: '0px 20px 0px 20px' }}>
           <p>Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>

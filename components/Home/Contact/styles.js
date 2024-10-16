@@ -9,7 +9,7 @@ export const FooterContainer = styled(motion.footer)`
 
   padding: 40px 0;
   background-color: ${({ theme }) => theme.colors.background};
-  color: gray;
+  color: white;
   
 
   & .logo {
@@ -45,7 +45,7 @@ export const FooterContainer = styled(motion.footer)`
     font-size: 10px;
 
     & a {
-      color: gray; 
+      color: white; 
       text-decoration: none; 
       margin: 0 10px; 
 
@@ -77,6 +77,7 @@ export const FooterContainer = styled(motion.footer)`
 
     & p {
         font-size: 15px;
+
     }
 
     & .column {

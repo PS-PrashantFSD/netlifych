@@ -9,7 +9,9 @@ export const FooterContainer = styled(motion.footer)`
 
   padding: 40px 0;
   background-color: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.red};
+  color: white;
+
+  border-top: 2px solid gray;
   
 
   & .logo {
@@ -42,10 +44,10 @@ export const FooterContainer = styled(motion.footer)`
   & .footer-links {
     text-align: center; 
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 10px;
 
     & a {
-      color: ${({ theme }) => theme.colors.red}; 
+      color: white; 
       text-decoration: none; 
       margin: 0 10px; 
 
@@ -70,20 +72,28 @@ export const FooterContainer = styled(motion.footer)`
     padding: 0px;
 
     & .contact-info {
-      flex-direction: column; // Stack columns on smaller screens
-      align-items: center; // Center align items in the column
+      flex-direction: column; 
+      align-items: center; 
+      font-size: 10px;
+    }
+
+    & p {
+        font-size: 10px;
+
     }
 
     & .column {
-      width: 100%; // Adjust spacing for smaller screens
-      text-align: center; // Ensure text is centered
+      width: 100%; 
+      text-align: center; 
+      margin-bottom: 0px;
+      padding: 2px;
     }
 
     & .footer-links,
     & .social-media,
     & .footer-note {
-      width: 100%; // Ensure links and notes take full width
-      text-align: center; // Center align text
+      width: 100%; 
+      text-align: center; 
     }
   }
 `;
