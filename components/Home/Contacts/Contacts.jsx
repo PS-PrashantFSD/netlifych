@@ -18,7 +18,7 @@ const Footer = () => {
             <h1>nex</h1>
             <p>Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>
             <p>
-            🗺️ Address: 14 1st Stage Bhanashankari, Bangalore, KA IN
+            @ Address: 14 1st Stage Bhanashankari, Bangalore, KA IN
             </p>
             <div className="social-media">
               <SocialMedia />
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-note">
-          <p style={{ color: 'gray' }}>&copy; Luminexa 2024</p>
+          <p style={{ color: 'white' }}>&copy; Luminexa 2024</p>
         </div>
       </FooterContainer>
     </AnimationonScreen>

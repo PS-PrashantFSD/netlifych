@@ -29,10 +29,20 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/terms": [
+    "/about": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/terms.js"
+      "static/chunks/pages/about.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/next/dist/pages/_error.js"
+    ],
+    "/privacy": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/privacy.js"
     ]
   },
   "ampFirstPages": []
