@@ -89,7 +89,6 @@ const AboutUs = () => {
 
   return (
     <div>
-    
     <ContentSection>
       <AnimateOnScreen>
         <motion.div>
