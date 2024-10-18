@@ -9,7 +9,7 @@ export const FooterContainer = styled(motion.footer)`
   padding: 40px 0;
   background-color: ${({ theme }) => theme.colors.background};
   color: #878787;
-  border-top: 2px solid gray;
+  border-top: 0.5px solid gray;
 
   & .footer-columns {
     display: flex;
@@ -59,7 +59,9 @@ export const FooterContainer = styled(motion.footer)`
     }
 
     & .column {
-      width: 100%; // Make columns full width on mobile
+      width: 90%; // Make columns full width on mobile
+      margin-left: 20px;
+      margin-right: 20px
     }
   }
 `;

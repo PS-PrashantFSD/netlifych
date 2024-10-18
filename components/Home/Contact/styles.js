@@ -9,7 +9,8 @@ export const FooterContainer = styled(motion.footer)`
   padding: 40px 0;
   background-color: ${({ theme }) => theme.colors.background};
   color: #878787;
-  border-top: 0.5px solid gray;
+  border-top: 0.5px solid black;
+  box-shadow: 0 -20px 90px red; /* Add red shadow on top */
 
   & .footer-columns {
     display: flex;
