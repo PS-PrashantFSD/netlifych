@@ -24,18 +24,19 @@ const ContactSection = styled(motion.section)`
 `;
 
 const TextWrapper = styled.div`
-  
   width: 58.333%;
 
   & h1 {
     font-size: 90px;
     color: white;
+    text-align: center; // Ensure h1 is left-aligned
   }
 
   & p {
     color: white;
     line-height: 1.5;
     margin: 10px 0 0 0;
+    text-align: center; // Center the paragraphs
   }
 
   ${({ theme }) => theme.breakpoints.small`
@@ -89,7 +90,7 @@ const SubmitButton = styled.button`
   border: none;
   border-radius: 0px;
   background-color: ${({ theme }) => theme.colors.red};
-  color: black;
+  color: white; // Change text color to white for better contrast
   cursor: pointer;
   font-size: 1rem;
 
@@ -114,7 +115,7 @@ const ContactForm = () => {
         </p>
       </TextWrapper>
       <FormWrapper>
-        <p style={{ marginBottom: '10px' }}>
+        <p style={{ marginBottom: '10px', textAlign: 'center' }}>
           We'd love to hear <strong>from you!</strong>
         </p>
         <Form>
