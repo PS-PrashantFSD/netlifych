@@ -1,0 +1,72 @@
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import containerStyles from '../../../styles/shared/container';
+
+export const ContentSection = styled(motion.section)`
+  ${containerStyles};
+  position: relative;
+  display: block;
+  margin-top: 200px;
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    margin-top: 100px;
+  `};
+`;
+
+export const Wrap = styled(motion.div)`
+  margin: 40px 0;
+`;
+
+export const Title = styled.h1`
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    font-size: 2.5rem;
+  `};
+`;
+
+export const Paragraph = styled.p`
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #FFFFF7;
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    font-size: 1.2rem;
+  `};
+`;
+
+export const BlogPost = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    flex-direction: column;
+  `};
+`;
+
+export const BlogImage = styled.img`
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+`;
+
+export const BlogContent = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const BlogDate = styled.span`
+  font-size: 1rem;
+  color: #CCCCCC;
+  margin-bottom: 10px;
+`;

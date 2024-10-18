@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="logo">
               <img src="logo.png" alt="Luminexa Company Logo" style={{ width: '160px' }} />
             </div>
-            <p style={{color: 'white'}}><strong>Luminexa Technologies</strong> <br/> NB's Group of Company</p>
+            <p style={{color: 'white'}}><strong>Luminexa Technologies</strong>, NB's Group of Company</p>
             <h1 style={{color: 'red'}}>nex</h1>
             <p >Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>
             
@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="column">
             <h3 style={{color: 'white'}}>Contact</h3>
             <p>Mobile: +91.866.044.9970</p>
-            <p>Mobile: +91.123.456.7890</p>
+            <p>Mobile: +91.948.161.5582</p>
             <p>Email: info@luminexa.in</p>
             <p>
             Address: 14 1st Stage Bhanashankari, Bangalore, KA IN

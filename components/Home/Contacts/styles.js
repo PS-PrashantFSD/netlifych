@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { secondaryFontStyle } from '../../../styles/shared/text';
+
 
 export const FooterContainer = styled(motion.footer)`
   display: flex;
