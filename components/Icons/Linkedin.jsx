@@ -5,7 +5,7 @@ function IconLinkedinCircled(props) {
   return (
     <svg
       viewBox="0 0 960 1000"
-      fill="currentColor"
+      fill="white"
       height="1em"
       width="1em"
       {...props}

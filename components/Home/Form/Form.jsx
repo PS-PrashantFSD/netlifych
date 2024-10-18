@@ -89,7 +89,7 @@ const SubmitButton = styled.button`
   border: none;
   border-radius: 0px;
   background-color: ${({ theme }) => theme.colors.red};
-  color: white;
+  color: black;
   cursor: pointer;
   font-size: 1rem;
 

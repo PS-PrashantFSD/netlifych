@@ -1,17 +1,18 @@
+// icon:facebook | Bootstrap https://icons.getbootstrap.com/ | Bootstrap
 import * as React from "react";
 
-function IconFacebookCircled(props) {
+function IconFacebook(props) {
   return (
     <svg
-      viewBox="0 0 960 1000"
-      fill="currentColor"
+      fill="white"
+      viewBox="0 0 16 16"
       height="1em"
       width="1em"
       {...props}
     >
-      <path d="M480 20c133.333 0 246.667 46.667 340 140s140 206.667 140 340c0 132-46.667 245-140 339S613.333 980 480 980s-246.667-47-340-141S0 632 0 500c0-133.333 46.667-246.667 140-340S346.667 20 480 20m114 330v-78h-72c-29.333 0-54 11-74 33s-30 49-30 81v44h-76v74h76v222h86V504h90v-74h-90v-52c0-18.667 6-28 18-28h72" />
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
     </svg>
   );
 }
 
-export default IconFacebookCircled;
+export default IconFacebook;
