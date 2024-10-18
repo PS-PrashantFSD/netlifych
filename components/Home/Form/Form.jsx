@@ -13,6 +13,7 @@ const ContactSection = styled(motion.section)`
   width: 100%;
 
   ${({ theme }) => theme.breakpoints.medium`
+  margin-bottom: 60px;
     width: 80%;
   `};
 
@@ -114,15 +115,17 @@ const ContactForm = () => {
         </p>
       </TextWrapper>
       <FormWrapper>
-        <p style={{ marginBottom: '10px' }}>
-          We'd love to hear <strong>from you!</strong>
-        </p>
+        
         <Form>
           <Input type="text" placeholder="Your Name" required />
           <Input type="email" placeholder="Your Email" required />
           <TextArea rows="5" placeholder="Your Message" required />
           <SubmitButton type="submit">Send Message</SubmitButton>
         </Form>
+
+        <p style={{ marginTop: '10px' }}>
+          We'd love to hear <strong>from you!</strong>
+        </p>
       </FormWrapper>
     </ContactSection>
   );

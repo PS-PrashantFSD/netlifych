@@ -16,6 +16,7 @@ const CTASection = styled(motion.section)`
 `;
 
 const CTAHeading = styled.h2`
+    width:80%;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -23,7 +24,7 @@ const CTAHeading = styled.h2`
 `;
 
 const CTADescription = styled.p`
-  max-width: 600px;
+  width:82%;
   margin-bottom: 40px;
   line-height: 1.5;
   font-size: 1rem;
