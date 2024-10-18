@@ -49,10 +49,11 @@ const PrivacyPolicy = () => {
             </Paragraph>
           </Wrap>
         </AnimateOnScreen>
-        <AnimateOnScreen>
-          <Contact/>
-        </AnimateOnScreen>
       </ContentSection>
+      <AnimateOnScreen>
+      <Contact/>
+      </AnimateOnScreen>
+      
     </div>
   );
 };

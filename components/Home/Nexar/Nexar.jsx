@@ -31,6 +31,7 @@ const Nexar = () => {
   };
 
   return (
+    <div>
     <ContentSection>
       <Link href="/nexar" passHref>
         <ProjectAnchor
@@ -89,10 +90,14 @@ const Nexar = () => {
 solutions to engage their audience more effectively. Traditional methods often fail to capture attention and provide
 interactive experiences. Luminexa addresses this gap by leveraging Augmented Reality (AR) & Mixed Realty (XR) to
 enhance user engagement and interaction.</p>
-<AnimateOnScreen>
-        <Contact />
-      </AnimateOnScreen>
+
+        
+      
     </ContentSection>
+    <Contact />
+
+
+    </div>
   );
 };
 

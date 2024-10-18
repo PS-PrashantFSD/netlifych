@@ -162,9 +162,9 @@ const AboutUs = () => {
         
       
     </ContentSection>
-    <AnimateOnScreen>
+  
     <Contact />
-    </AnimateOnScreen>
+    
       
     </div>
   );

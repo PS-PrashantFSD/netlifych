@@ -60,10 +60,8 @@ const TermsAndConditions = () => {
             </Paragraph>
           </Wrap>
         </AnimateOnScreen>
-        <AnimateOnScreen>
-          <Contact/>
-        </AnimateOnScreen>
       </ContentSection>
+      <Contact/>
     </div>
   );
 };

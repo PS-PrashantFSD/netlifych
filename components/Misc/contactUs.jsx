@@ -1,48 +1,130 @@
-import React from 'react';
-import { FooterContainer } from './styles'; // Import the styled component
-import SocialMedia from '../../SocialMedia'; // Ensure you have a SocialMedia component
-import AnimationonScreen from './../../AnimateOnScreen';
-import Form from './../../Home/Form';
+import React from "react";
+import styled from "styled-components";
 
-const Footer = () => {
+const Card = () => {
   return (
-    <FooterContainer>
-      <AnimationonScreen>
-        <Form />
-      </AnimationonScreen>
-      <div className="logo">
-        <img src="logo.png" alt="Logo" style={{ width: '160px' }} /> {/* Replace with your logo path */}
-      </div>
-      <div>
-        <p>Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>
-      </div>
-      <div className="contact-info">
-        <div className="column contact-text">
-          <p>Address: 14 1st Stage Bhanashankari, Bangalore, KA IN</p>
+    <StyledWrapper>
+      <div className="card">
+        <div className="content">
+          <div className="front">
+            <h3 className="title">nexAR</h3>
+            <p className="subtitle">AR and XR</p>
+          </div>
+
+          <div className="back">
+            <p className="description">
+              Elevate user experience with our Augmented Reality software,
+              blending real and virtual worlds for innovative engagement in
+              marketing, education, and media.
+            </p>
+          </div>
         </div>
-        <div className="column contact-text">
-          <p>Phone: +91.866.044.9970 <br/> Email: info@luminexa.in</p>
+      </div>
+      <div className="card">
+        <div className="content">
+          <div className="front">
+            <h3 className="title">nexNET</h3>
+            <p className="subtitle">Web and Custom Software</p>
+          </div>
+
+          <div className="back">
+            <p className="description">
+              Enhance your online presence with our custom web and software
+              development. We deliver responsive, SEO-optimized websites and
+              tailored software solutions that effectively communicate your
+              brand.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="contact-info">
-        
+      <div className="card">
+        <div className="content">
+          <div className="front">
+            <h3 className="title">NexAi</h3>
+            <p className="subtitle">-</p>
+          </div>
+
+          <div className="back">
+            <p className="description">
+              Improve efficiency with our AI-powered Object Detection systems,
+              ideal for retail, security, and automation, enabling smart
+              inventory, surveillance, and process automation.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="footer-links">
-        <p>
-          <a href="/services">Our Services</a> | 
-          <a href="/privacy-policy"> Privacy Policy</a> | 
-          <a href="/about-us"> About Us</a> | 
-          <a href="/terms-and-conditions"> Terms and Conditions</a>
-        </p>
-      </div>
-      <div className="social-media">
-        <SocialMedia />
-      </div>
-      <div className="footer-note">
-        <p>@luminexa 2024</p>
-      </div>
-    </FooterContainer>
+    </StyledWrapper>
   );
 };
 
-export default React.memo(Footer);
+const StyledWrapper = styled.div`
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly */
+  gap: 2rem; /* Equal gap between cards */
+  margin: 50px 0px 50px 0px;
+  
+  .card {
+    width: 18rem; /* Increased card width */
+    height: 12rem; /* Increased card height */
+    cursor: pointer;
+  }
+
+  .content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    background-color: #3e3e3e;
+    padding: 2em; /* Adjust padding if needed */
+    transform-style: preserve-3d;
+    height: 100%; /* Ensure content takes full height */
+  }
+
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+
+  .title {
+    transform: translateZ(5rem);
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    transform: translateZ(2rem);
+  }
+
+  .back {
+    transform: rotateY(0.5turn);
+    background-color: ${({ theme }) => theme.colors.red};
+  }
+
+  .description {
+    transform: translateZ(3rem);
+  }
+
+  @media (max-width: 768px) {
+    display: flex; /* Ensure flexbox is used */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align cards */
+    margin: 40px 0px 40px; /* Adjust margins for mobile */
+
+    .card {
+      width: 80%; /* Full width for mobile */
+      height: 250px; /* Fixed height for mobile */
+      margin-bottom: 2rem; /* Space between cards */
+    }
+  }
+`;
+
+export default Card;

@@ -25,8 +25,9 @@ export default [
   },
   {
     id: '50-beaches',
-    title: 'Contact Us',
-    path: '/terms',
+    title: 'Blog',
+    path: '/blog',
     video: '',
   },
+  
 ];

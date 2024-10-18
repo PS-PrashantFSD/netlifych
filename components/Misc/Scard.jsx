@@ -5,53 +5,28 @@ const Card = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        <div className="content">
-          <div className="front">
-            <h3 className="title">nexAR</h3>
-            <p className="subtitle">AR and XR</p>
-          </div>
-
-          <div className="back">
-            <p className="description">
-              Elevate user experience with our Augmented Reality software,
-              blending real and virtual worlds for innovative engagement in
-              marketing, education, and media.
-            </p>
-          </div>
+        <div className="card-icon">
+          <h1 style={{fontSize: '69px'}}>nexAR</h1>
         </div>
+        <span className="card-body">
+          Elevate user experience with our Augmented Reality software, blending real and virtual worlds for innovative engagement in marketing, education, and media.
+        </span>
       </div>
       <div className="card">
-        <div className="content">
-          <div className="front">
-            <h3 className="title">nexNET</h3>
-            <p className="subtitle">Web and Custom Software</p>
-          </div>
-
-          <div className="back">
-            <p className="description">
-              Enhance your online presence with our custom web and software
-              development. We deliver responsive, SEO-optimized websites and
-              tailored software solutions that effectively communicate your
-              brand.
-            </p>
-          </div>
+        <div className="card-icon">
+        <h1 style={{fontSize: '69px'}}>nexNet</h1>
         </div>
+        <span className="card-body">
+          Enhance your online presence with our custom web and software development. We deliver responsive, SEO-optimized websites and tailored software solutions that effectively communicate your brand.
+        </span>
       </div>
       <div className="card">
-        <div className="content">
-          <div className="front">
-            <h3 className="title">NexAi</h3>
-            <p className="subtitle">-</p>
-          </div>
-
-          <div className="back">
-            <p className="description">
-              Improve efficiency with our AI-powered Object Detection systems,
-              ideal for retail, security, and automation, enabling smart
-              inventory, surveillance, and process automation.
-            </p>
-          </div>
+        <div className="card-icon">
+        <h1 style={{fontSize: '69px'}}>nexAi</h1>
         </div>
+        <span className="card-body">
+          Improve efficiency with our AI-powered Object Detection systems, ideal for retail, security, and automation, enabling smart inventory, surveillance, and process automation.
+        </span>
       </div>
     </StyledWrapper>
   );
@@ -59,71 +34,45 @@ const Card = () => {
 
 const StyledWrapper = styled.div`
   display: flex;
-  justify-content: space-between; /* Distribute space evenly */
-  gap: 2rem; /* Equal gap between cards */
-  margin: 50px 0px 50px 0px;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjusts spacing between cards */
+  
   
   .card {
-    width: 18rem; /* Increased card width */
-    height: 12rem; /* Increased card height */
-    cursor: pointer;
-  }
+    width: 300px;
+    height: 300px;
+    background: #e4e3e3da;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1em 1.5em;
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin: 2.5em 0; /* Adds margin to the top and bottom */
 
-  .content {
-    text-align: center;
-    position: relative;
-    transition: all 2.25s;
-    background-color: #3e3e3e;
-    padding: 2em; /* Adjust padding if needed */
-    transform-style: preserve-3d;
-    height: 100%; /* Ensure content takes full height */
-  }
-
-  .card:hover .content {
-    transform: rotateY(0.5turn);
-  }
-
-  .front,
-  .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 2em;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
-
-  .title {
-    transform: translateZ(5rem);
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    transform: translateZ(2rem);
-  }
-
-  .back {
-    transform: rotateY(0.5turn);
-    background-color: ${({ theme }) => theme.colors.red};
-  }
-
-  .description {
-    transform: translateZ(3rem);
-  }
-
-  @media (max-width: 768px) {
-    display: flex; /* Ensure flexbox is used */
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center; /* Center align cards */
-    margin: 40px 0px 40px; /* Adjust margins for mobile */
-
-    .card {
-      width: 80%; /* Full width for mobile */
-      height: 250px; /* Fixed height for mobile */
-      margin-bottom: 2rem; /* Space between cards */
+    &:hover {
+      background: #f1f1f1;
+      color: red;
     }
+  }
+
+  .card-icon svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .card-body {
+    text-align: start; /* Change to start for better alignment */
+  }
+  @media (max-width: 600px) {
+    .card {
+      width: 100%; /* Make cards full-width on small screens */
+      height: auto; /* Allow height to adjust based on content */
+    }
+
+    display: block; /* Stack cards vertically */
   }
 `;
 
