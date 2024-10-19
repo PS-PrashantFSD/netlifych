@@ -13,6 +13,7 @@ const CTASection = styled(motion.section)`
   margin-bottom: 100px;
   background-color: ${({ theme }) => theme.colors.red};
   padding: 100px 0px 100px 0px;
+  border-radius: 66px;
 `;
 
 const CTAHeading = styled.h2`

@@ -13,7 +13,7 @@ const CTASection = styled(motion.section)`
   margin-bottom: 100px;
   background-color: ${({ theme }) => theme.colors.red};
   padding: 100px 0;
-  border-radius: 33px;
+  border-radius: 66px;
 `;
 
 const SectionsContainer = styled.div`
