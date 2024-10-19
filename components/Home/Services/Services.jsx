@@ -76,7 +76,7 @@ const Services = () => {
           attention and provide interactive experiences. Luminexa addresses this gap by leveraging 
           Augmented Reality (AR) & Mixed Reality (XR) to enhance user engagement and interaction.
         </p>
-        <h1 style={{ fontSize: '20px', marginBottom: '20px', color:'red'}}>
+        <h1 style={{ fontSize: '20px', marginBottom: '20px', color:'red',  marginBottom:'60px'}} classNmae= 'bottomtext'>
           Featured Product nexAR
         </h1>
         

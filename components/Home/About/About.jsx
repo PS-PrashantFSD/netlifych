@@ -3,6 +3,7 @@ import items from '../../../utils/constants/services-items';
 import useCursorStyle from '../../../hooks/useCursorStyle';
 import AnimateOnScreen from '../../AnimateOnScreen';
 import Call from './../../Misc/Call'
+import Nexar from './../../Misc/Nexar'
 import {
   ContentSection,
   TextWrapper,
@@ -35,6 +36,7 @@ const About = () => {
 
   return (
     <AnimateOnScreen>
+      <Nexar/>
       <ContentSection>
         <TextWrapper>
           <h1 style={{fontSize: '99px'}}>About Us</h1>
