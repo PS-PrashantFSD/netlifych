@@ -93,7 +93,7 @@ const CallToAction = () => {
           </CTADescription>
         </Section>
       </SectionsContainer>
-      <p style={{color:'black', margin:'19px'}}><strong>"Differentiate yourself from competition and go viral!"</strong></p>
+      <p style={{color:'black', margin:'19px'}}><strong>"Differentiate yourself from competition" </strong></p> <h1 style={{color:'black', fontSize: '80px'}}>go viral!</h1>
     </CTASection>
   );
 };

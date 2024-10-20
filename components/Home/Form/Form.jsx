@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import containerStyles from '../../../styles/shared/container';
-import { secondaryFontStyle } from '../../../styles/shared/text';
 
 const ContactSection = styled(motion.section)`
   ${containerStyles};
@@ -62,7 +61,7 @@ const Input = styled.input`
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  border-radius: 0px;
+  border-radius: 9px;
   font-size: 1rem;
 
   &:focus {
@@ -75,7 +74,7 @@ const TextArea = styled.textarea`
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  border-radius: 0px;
+  border-radius: 9px;
   font-size: 1rem;
   resize: none;
 
@@ -88,7 +87,7 @@ const TextArea = styled.textarea`
 const SubmitButton = styled.button`
   padding: 10px 15px;
   border: none;
-  border-radius: 0px;
+  border-radius: 9px;
   background-color: ${({ theme }) => theme.colors.red};
   color: black;
   cursor: pointer;

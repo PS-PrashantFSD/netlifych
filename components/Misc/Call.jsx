@@ -11,7 +11,7 @@ const CTASection = styled(motion.section)`
   justify-content: center;
   text-align: center;
   margin-bottom: 100px;
-  background-color: ${({ theme }) => theme.colors.red};
+  background-color: white;
   padding: 100px 0px 100px 0px;
   border-radius: 66px;
 `;
@@ -21,7 +21,7 @@ const CTAHeading = styled.h2`
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: black;
+  color: red;
 `;
 
 const CTADescription = styled.p`
@@ -35,15 +35,22 @@ const CTADescription = styled.p`
 const CTAButton = styled.a`
   padding: 15px 30px;
   font-size: 1rem;
-  color: ${({ theme }) => theme.colors.red};
-  background-color: black;;
-  border: none;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
   text-decoration: none;
   transition: background-color 0.3s;
+  border-radius: 18px;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.darkRed};
   }
+`;
+
+const ButtonIcon = styled.img`
+  width: 20px; /* Adjust the size of the GIF icon */
+  height: 20px; /* Adjust the size of the GIF icon */
+  margin-right: 10px; /* Space between the icon and text */
 `;
 
 const CallToAction = () => {
@@ -51,10 +58,13 @@ const CallToAction = () => {
     <CTASection initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       <CTAHeading>Unlock the potential of nexAR and AI in your business</CTAHeading>
       <CTADescription>
-        Click to explore our transformative solutions in augmented reality, web development, and smart detection technologies. 
-        Start your digital revolution now!
+        <strong>Click to explore our transformative solutions in augmented reality, web development, and smart detection technologies. 
+        Start your digital revolution now!</strong>
       </CTADescription>
-      <CTAButton href="tel:8660449970">Call to Action</CTAButton>
+      <CTAButton href="tel:8660449970">
+        <ButtonIcon src="gif.gif" alt="GIF Icon" /> 
+        Call to Action
+      </CTAButton>
     </CTASection>
   );
 };
