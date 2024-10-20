@@ -11,7 +11,7 @@ const CTASection = styled(motion.section)`
   justify-content: center;
   text-align: center;
   margin-bottom: 100px;
-  background-color: ${({ theme }) => theme.colors.red};
+  background-color: white;
   padding: 100px 0;
   border-radius: 66px;
 `;
@@ -40,7 +40,7 @@ const Section = styled.div`
 `;
 
 const GIFIcon = styled.img`
-  width: 50px; /* Adjust size as needed */
+  width: 160px; /* Adjust size as needed */
   height: auto;
   cursor: pointer; 
   transition: transform 0.3s;
@@ -54,7 +54,7 @@ const CTAHeading = styled.h2`
   font-size: 6rem;
   font-weight: 700;
   margin: 20px 0; /* Adjust margin to create spacing */
-  color: black;
+  color: red;
 `;
 
 const CTADescription = styled.p`
@@ -69,31 +69,31 @@ const CallToAction = () => {
     <CTASection initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       <SectionsContainer>
         <Section>
-          <CTAHeading>What</CTAHeading>
-          <GIFIcon src="wht.png" alt="PNG Icon 1" onClick={() => window.location.href = "tel:8660449970"} />
+          <CTAHeading>nexAR</CTAHeading>
+          <GIFIcon src="invent.png" alt="PNG Icon 1" onClick={() => window.location.href = "tel:8660449970"} />
           <CTADescription>
-            Luminexa Technologies developed image tracking virtual software based on Augmented Reality and Mixed Reality, named it nexAR.
+            <strong>Luminexa Technologies developed image tracking virtual software based on Augmented Reality and Mixed Reality, named it nexAR.</strong>
           </CTADescription>
         </Section>
         
         <Section>
           
-          <CTAHeading>nexAR</CTAHeading>
-          <GIFIcon src="info.png" alt="PNG Icon 2" onClick={() => window.location.href = "tel:8660449970"} />
+          <CTAHeading>How</CTAHeading>
+          <GIFIcon src="howit.png" alt="PNG Icon 2" onClick={() => window.location.href = "tel:8660449970"} />
           <CTADescription>
-            nexAR is a WebAR solution that displays content like 3D models, holographic avatars, videos, images, audio, and links when the nexAR camera is pointed at a 2D surface.
+            <strong>nexAR is a WebAR solution that displays content like 3D models, holographic avatars, videos, images, audio, and links when the nexAR camera is pointed at a 2D surface.</strong>
           </CTADescription>
         </Section>
         
         <Section>
-          <CTAHeading>No</CTAHeading>
-          <GIFIcon src="wrong.png" alt="PNG Icon 3" onClick={() => window.location.href = "tel:8660449970"} />
+          <CTAHeading>Works</CTAHeading>
+          <GIFIcon src="worked.png" alt="PNG Icon 3" onClick={() => window.location.href = "tel:8660449970"} />
           <CTADescription>
-            nexAR requires no additional app installations and works seamlessly on all smartphones, whether Android or iOS.
+            <strong>nexAR requires no additional app installations and works seamlessly on all smartphones, whether Android or iOS.</strong>
           </CTADescription>
         </Section>
       </SectionsContainer>
-      <p>Differentiate yourself from competition and go viral!</p>
+      <p style={{color:'black', margin:'19px'}}><strong>"Differentiate yourself from competition and go viral!"</strong></p>
     </CTASection>
   );
 };
