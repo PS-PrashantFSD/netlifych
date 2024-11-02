@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import Lottie from 'lottie-react';
 import containerStyles from '../../styles/shared/container';
+import animation1 from './../Lottie/work.json'; 
+import animation2 from './../Lottie/nexar.json';
+import animation3 from './../Lottie/works.json';
 
 const CTASection = styled(motion.section)`
   ${containerStyles};
@@ -11,57 +15,58 @@ const CTASection = styled(motion.section)`
   justify-content: center;
   text-align: center;
   margin-bottom: 100px;
-  background-color: white;
+  background-color: #302f2f;
   padding: 100px 0;
   border-radius: 66px;
 `;
 
 const SectionsContainer = styled.div`
   display: flex;
-  justify-content: space-around; /* Space sections evenly */
-  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
 
   @media (max-width: 768px) {
-    flex-direction: column; /* Stack sections vertically on mobile */
-    align-items: center; /* Center align items in mobile view */
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 const Section = styled.div`
-  flex: 1; /* Make each section take equal space */
-  margin: 0 20px; /* Add some margin between sections */
-  max-width: 300px; /* Set a max-width for better responsiveness */
-  text-align: center; /* Center text in sections */
+  flex: 1;
+  margin: 0 20px;
+  max-width: 300px;
+  text-align: center;
 
   @media (max-width: 768px) {
-    margin: 20px 0; /* Add vertical margin for mobile */
-    max-width: 80%; /* Allow full width on mobile */
+    margin: 20px 0;
+    max-width: 80%;
   }
 `;
 
-const GIFIcon = styled.img`
-  width: 160px; /* Adjust size as needed */
-  height: auto;
-  cursor: pointer; 
+const LottieContainer = styled.div`
+  width: 160px;
+  height: 160px; /* Fixed height for uniformity */
+  margin: 0 auto; /* Center the animation */
+  cursor: pointer;
   transition: transform 0.3s;
 
   &:hover {
-    transform: scale(1.1); /* Slightly scale on hover */
+    transform: scale(1.1);
   }
 `;
 
 const CTAHeading = styled.h2`
   font-size: 6rem;
   font-weight: 700;
-  margin: 20px 0; /* Adjust margin to create spacing */
-  color: red;
+  margin: 20px 0;
+  color: white;
 `;
 
 const CTADescription = styled.p`
   margin-bottom: 40px;
   line-height: 1.5;
   font-size: 1rem;
-  color: black;
+  color: gray;
 `;
 
 const CallToAction = () => {
@@ -70,16 +75,19 @@ const CallToAction = () => {
       <SectionsContainer>
         <Section>
           <CTAHeading>nexAR</CTAHeading>
-          <GIFIcon src="invent.png" alt="PNG Icon 1" onClick={() => window.location.href = "tel:8660449970"} />
+          <LottieContainer onClick={() => window.location.href = "tel:8660449970"}>
+            <Lottie animationData={animation2} loop={true} />
+          </LottieContainer>
           <CTADescription>
             <strong>Luminexa Technologies developed image tracking virtual software based on Augmented Reality and Mixed Reality, named it nexAR.</strong>
           </CTADescription>
         </Section>
         
         <Section>
-          
           <CTAHeading>How</CTAHeading>
-          <GIFIcon src="howit.png" alt="PNG Icon 2" onClick={() => window.location.href = "tel:8660449970"} />
+          <LottieContainer onClick={() => window.location.href = "tel:8660449970"}>
+            <Lottie animationData={animation1} loop={true} />
+          </LottieContainer>
           <CTADescription>
             <strong>nexAR is a WebAR solution that displays content like 3D models, holographic avatars, videos, images, audio, and links when the nexAR camera is pointed at a 2D surface.</strong>
           </CTADescription>
@@ -87,13 +95,16 @@ const CallToAction = () => {
         
         <Section>
           <CTAHeading>Works</CTAHeading>
-          <GIFIcon src="worked.png" alt="PNG Icon 3" onClick={() => window.location.href = "tel:8660449970"} />
+          <LottieContainer onClick={() => window.location.href = "tel:8660449970"}>
+            <Lottie animationData={animation3} loop={true} />
+          </LottieContainer>
           <CTADescription>
             <strong>nexAR requires no additional app installations and works seamlessly on all smartphones, whether Android or iOS.</strong>
           </CTADescription>
         </Section>
       </SectionsContainer>
-      <p style={{color:'black', margin:'19px'}}><strong>"Differentiate yourself from competition" </strong></p> <h1 style={{color:'black', fontSize: '80px'}}>go viral!</h1>
+      <p style={{ color: '#e6e3e3 ', margin: '19px' }}><strong>"Differentiate yourself from competition"</strong></p>
+      <h1 style={{ color: 'gray', fontSize: '80px' }}>go viral!</h1>
     </CTASection>
   );
 };

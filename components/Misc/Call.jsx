@@ -11,7 +11,7 @@ const CTASection = styled(motion.section)`
   justify-content: center;
   text-align: center;
   margin-bottom: 100px;
-  background-color: white;
+  background-color: #302f2f;
   padding: 100px 0px 100px 0px;
   border-radius: 66px;
 `;
@@ -21,7 +21,7 @@ const CTAHeading = styled.h2`
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: red;
+  color: White;
 `;
 
 const CTADescription = styled.p`
@@ -29,15 +29,15 @@ const CTADescription = styled.p`
   margin-bottom: 40px;
   line-height: 1.5;
   font-size: 1rem;
-  color: black;
+  color: gray;
 `;
 
 const CTAButton = styled.a`
   padding: 15px 30px;
   font-size: 1rem;
-  color: black;
-  background-color: white;
-  border: 1px solid black;
+  color: white;
+  background-color: green;
+  border: 1px solid green;
   text-decoration: none;
   transition: background-color 0.3s;
   border-radius: 18px;

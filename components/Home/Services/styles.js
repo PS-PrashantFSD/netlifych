@@ -244,7 +244,7 @@ export const TextWrapper = styled.div`
   justify-content: space-between; /* Space out the text and card */
   width: 100%;
   gap: 33px; /* Space between text and card */
-  margin-bottom : 180px;
+  margin-bottom : 100px;
 
   & h2 {
     margin: 0;
@@ -262,12 +262,12 @@ export const TextWrapper = styled.div`
   }
 
   ${({ theme }) => theme.breakpoints.small`
-    flex-direction: column; /* Stack vertically on small screens */
-    align-items: flex-start; /* Align items to the start on small screens */
+    flex-direction: column; 
+    align-items: flex-start; 
     width: 100%;
 
     & h2 {
-      margin-bottom: 20px; /* Adjust margin for smaller screens */
+      margin-bottom: 20px; 
     }
   `};
 

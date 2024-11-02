@@ -14,7 +14,7 @@ function Home() {
       <FeaturedSection />
       <AboutSection />
       <ContactSection />
-      <Footer />
+      <Footer/>
     </>
   );
 }

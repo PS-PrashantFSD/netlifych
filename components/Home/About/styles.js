@@ -30,6 +30,7 @@ export const TextWrapper = styled.div`
     font-size: 2.625rem;
     line-height: 1;
     font-weight: 500;
+    color: Gray;
   }
 
   & p {
@@ -76,10 +77,10 @@ export const AccordionToggle = styled.button`
   display: block;
   padding: 27px 0 0 35px;
   line-height: 15px;
-  color: ${({ theme }) => theme.colors.red};
+  color: White;
 
   &:hover:not([aria-expanded='true']) {
-    color: ${({ theme }) => theme.text};
+    color: white;
 
     &::before,
     &::after {
@@ -105,7 +106,7 @@ export const AccordionToggle = styled.button`
     width: 18px;
     height: 4px;
     margin-top: 11.5px;
-    background: ${({ theme }) => theme.colors.red};
+    background: white;
     transition: all 0.1s ease-in-out;
   }
 
@@ -142,7 +143,7 @@ export const AccordionContent = styled(motion.div)`
   line-height: 1.0714285714;
   letter-spacing: 0.5px;
   overflow: hidden;
-  color: ${({ theme }) => theme.colors.red};
+  color: Gray;
 
   & p {
     margin: 6.1px 0 0;

@@ -19,8 +19,8 @@ export default [
   },
   {
     id: 'it-takes-an-island',
-    title: 'Nexar - ar card',
-    path: '/nexar',
+    title: 'Contact Us',
+    path: '/contact',
     video: '',
   },
   {

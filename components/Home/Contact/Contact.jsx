@@ -20,7 +20,7 @@ const Footer = () => {
               <img src="logo.png" alt="Luminexa Company Logo" style={{ width: '160px' }} />
             </div>
             <p style={{color: 'white'}}><strong>Luminexa Technologies</strong>, NB's Group of Company</p>
-            <h1 style={{color: 'red'}}>nex</h1>
+            <h1 style={{color: '#302f2f'}}>nex</h1>
             <p >Your go-to source for innovative solutions. We're here to help you achieve your goals.</p>
             
             <div className="social-media">

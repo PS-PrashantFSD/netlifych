@@ -16,7 +16,6 @@ import {
   Text3
 } from './styles';
 import Scard from '../../Misc/Scard';
-import Button from '../../Misc/Button';
 
 const Services = () => {
   const { addCursorBorder, removeCursorBorder } = useCursorStyle();
@@ -64,7 +63,7 @@ const Services = () => {
           </div>
         </TextWrapper>
 
-        <h1 style={{ fontSize: '80px', marginBottom:'9px' }}>Explore</h1>
+        <h1 style={{ fontSize: '80px', marginBottom:'10px' }}>Explore</h1>
         <p >
           In today's competitive market, every business(from small to large scale) , seeks innovative
           solutions to engage their audience effectively. 
@@ -76,12 +75,10 @@ const Services = () => {
           attention and provide interactive experiences. Luminexa addresses this gap by leveraging 
           Augmented Reality (AR) & Mixed Reality (XR) to enhance user engagement and interaction.
         </p>
-        <h1 style={{ fontSize: '20px', marginBottom: '20px', color:'red',  marginBottom:'60px'}} classNmae= 'bottomtext'>
+        <h1 style={{ fontSize: '20px', marginBottom: '20px', color:'red',  marginBottom:'60px'}} className= 'bottomtext'>
           Featured Product nexAR
         </h1>
-        
       </ContentSection>
-
       <AnimateOnScreen>
         <Contact />
       </AnimateOnScreen>
