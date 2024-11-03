@@ -7,7 +7,7 @@ import DefaultMenuButton from '../../MenuButton';
 export const ContentSection = styled(motion.section)`
   ${containerStyles};
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 
   ${({ theme }) => theme.breakpoints.tablet`
     margin-bottom: 100px;
@@ -182,6 +182,6 @@ export const Nexcard = styled(motion.div)`
   margin: 0 auto; // Centers the Nexcard component itself if there are constraints on width
 
   ${({ theme }) => theme.breakpoints.tablet`
-    justify-content: flex-start; // You can maintain this for smaller screens if needed
+    justify-content: center; // You can maintain this for smaller screens if needed
   `};
 `;

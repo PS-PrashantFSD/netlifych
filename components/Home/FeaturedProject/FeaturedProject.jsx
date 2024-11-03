@@ -101,6 +101,7 @@ const FeaturedProject = () => {
   }, [controlsArrow, isTabletView]);
 
   return (
+    <div>
     <ContentSection>
       <AnimateOnScreen>
         <motion.div>
@@ -124,8 +125,15 @@ const FeaturedProject = () => {
           </Link>
         </motion.div>
       </AnimateOnScreen>
-      <Nexcard /> {/* Ensures Nexcard is rendered in FeaturedProject */}
+      <AnimateOnScreen>
+    <Nexcard />
+    </AnimateOnScreen>
     </ContentSection>
+    
+   
+    
+
+    </div>
   );
 };
 

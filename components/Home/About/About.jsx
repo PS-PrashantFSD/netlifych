@@ -36,7 +36,10 @@ const About = () => {
 
   return (
     <AnimateOnScreen>
+      <AnimateOnScreen>
       <Nexar/>
+      </AnimateOnScreen>
+    
       <ContentSection>
         <TextWrapper>
           <h1 style={{fontSize: '69px', marginBottom:'9px'}}>Luminexa</h1>

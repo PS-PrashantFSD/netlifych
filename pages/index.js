@@ -5,6 +5,7 @@ import FeaturedSection from '../components/Home/FeaturedProject';
 import AboutSection from '../components/Home/About';
 import ContactSection from '../components/Home/Contact';
 import Footer from '../components/Home/Footer';
+import WhatsappButton from '../components/Misc/Whatsapp'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <AboutSection />
       <ContactSection />
       <Footer/>
+      <WhatsappButton/>
     </>
   );
 }
