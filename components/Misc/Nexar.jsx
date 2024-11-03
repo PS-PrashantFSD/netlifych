@@ -125,9 +125,9 @@ const ModalOverlay = styled.div`
 const ModalContent = styled.div`
   background-color: #302f2f;
   padding: 40px;
-  border-radius: 12px;
+  border-radius: 36px;
   max-width: 400px;
-  width: 100%;
+  width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative; /* Relative for close button positioning */
 `;
@@ -135,15 +135,15 @@ const ModalContent = styled.div`
 const CloseButton = styled.button`
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 `;
 
 const FormField = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 const Input = styled.input`
@@ -161,6 +161,23 @@ const TextArea = styled.textarea`
   border-radius: 6px;
   font-size: 1rem;
 `;
+
+const FormButton = styled.button`
+  padding: 15px 30px; /* Adjust padding as needed */
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 36px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px; /* Adjust margin to reduce gap */
+  width: 100%; /* Full width for better alignment */
+
+  &:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+`;
+
 
 const CallToAction = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -222,7 +239,7 @@ const CallToAction = () => {
         <ModalOverlay onClick={closeModal}>
           <ModalContent onClick={e => e.stopPropagation()}>
             <CloseButton onClick={closeModal}>&times;</CloseButton>
-            <h1 style={{fontSize: '30px'}}>Book a Demo</h1>
+            <h1 style={{fontSize: '30px', marginBottom: '20px'}}>Book a Demo</h1>
             <form>
               <FormField>
                 <label>Name:</label>
@@ -240,7 +257,7 @@ const CallToAction = () => {
                 <label>Message:</label>
                 <TextArea name="message" rows="4" required placeholder="I would like to request a demo session for the nexAR product."/>
               </FormField>
-              <Button type="submit">Submit</Button>
+              <FormButton type="submit">Submit</FormButton>
             </form>
           </ModalContent>
         </ModalOverlay>

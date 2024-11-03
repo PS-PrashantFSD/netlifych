@@ -49,7 +49,7 @@ const StyledWrapper = styled.div`
     padding: 1em 1.5em;
     transition: all 0.5s ease;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    color: gray;
+    color: white;
     margin: 2em 0;
 
     &:hover {
