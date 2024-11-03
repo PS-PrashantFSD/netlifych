@@ -130,15 +130,7 @@ export const VideoPreview = styled.div`
   `};
 `;
 
-export const MenuContainer = styled(motion.div)`
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
 
-  ${({ theme }) => theme.breakpoints.tablet`
-    justify-content: flex-start;
-  `};
-`;
 
 export const MenuButton = styled(DefaultMenuButton)`
   width: calc(25% - 30px);
@@ -179,5 +171,17 @@ export const MenuButton = styled(DefaultMenuButton)`
       font-size: 1.125rem;
       line-height: 1.2777777778;
     }
+  `};
+`;
+
+export const Nexcard = styled(motion.div)`
+  display: flex;
+  justify-content: center; // Centers the content horizontally
+  align-items: center; // Centers the content vertically
+  width: 100%;
+  margin: 0 auto; // Centers the Nexcard component itself if there are constraints on width
+
+  ${({ theme }) => theme.breakpoints.tablet`
+    justify-content: flex-start; // You can maintain this for smaller screens if needed
   `};
 `;

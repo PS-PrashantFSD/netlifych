@@ -7,14 +7,13 @@ import useMediaQuery from '../../../hooks/useMediaQuery';
 import useStyledTheme from '../../../hooks/useStyledTheme';
 import AnimateOnScreen from '../../AnimateOnScreen';
 import Arrow from '../../Icons/Arrow';
+import Nexcard from '../../Misc/Nexcard';
 import {
   ContentSection,
   ProjectAnchor,
   ProjectInfo,
   ProjectTitle,
   VideoPreview,
-  MenuContainer,
-  MenuButton,
 } from './styles';
 
 const transition = {
@@ -112,7 +111,7 @@ const FeaturedProject = () => {
             >
               <ProjectInfo>
                 <ProjectTitle>
-                  GET <br /> STARTED
+                  Get <br /> Started
                   <span className="arrow">
                     <Arrow animate={controlsArrow} transition={transition} />
                   </span>
@@ -125,18 +124,7 @@ const FeaturedProject = () => {
           </Link>
         </motion.div>
       </AnimateOnScreen>
-      <AnimateOnScreen>
-        <MenuContainer>
-          <Link href="/services" passHref>
-            <MenuButton
-              sticky={false}
-              title="Services"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            />
-          </Link>
-        </MenuContainer>
-      </AnimateOnScreen>
+      <Nexcard /> {/* Ensures Nexcard is rendered in FeaturedProject */}
     </ContentSection>
   );
 };
