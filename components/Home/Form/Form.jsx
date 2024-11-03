@@ -12,19 +12,18 @@ const ContactSection = styled(motion.section)`
   width: 100%;
 
   ${({ theme }) => theme.breakpoints.medium`
-  margin-bottom: 60px;
+    margin-bottom: 60px;
     width: 80%;
   `};
 
   ${({ theme }) => theme.breakpoints.small`
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Center-align content on small screens */
     width: 100%;
   `};
 `;
 
 const TextWrapper = styled.div`
-  
   width: 58.333%;
 
   & h1 {
@@ -40,6 +39,7 @@ const TextWrapper = styled.div`
 
   ${({ theme }) => theme.breakpoints.small`
     width: 100%;
+    text-align: center; /* Center-align text on small screens */
   `};
 `;
 
@@ -48,6 +48,7 @@ const FormWrapper = styled.div`
 
   ${({ theme }) => theme.breakpoints.small`
     width: 100%;
+    text-align: center; /* Optional: center-align form on small screens */
   `};
 `;
 
@@ -102,7 +103,7 @@ const ContactForm = () => {
   return (
     <ContactSection>
       <TextWrapper>
-        <h1>Contact Us</h1>
+        <h1 style={{fontSize:'69px'}}>Contact Us</h1>
         <p>
           nexAR - Augmented Reality finds diverse applications across marketing and advertising,
           retail and e-commerce.
@@ -114,14 +115,12 @@ const ContactForm = () => {
         </p>
       </TextWrapper>
       <FormWrapper>
-        
         <Form>
           <Input type="text" placeholder="Your Name" required />
           <Input type="email" placeholder="Your Email" required />
           <TextArea rows="5" placeholder="Your Message" required />
           <SubmitButton type="submit">Send Message</SubmitButton>
         </Form>
-
         <p style={{ marginTop: '10px' }}>
           We'd love to hear <strong>from you!</strong>
         </p>

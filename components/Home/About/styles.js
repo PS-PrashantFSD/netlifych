@@ -12,6 +12,7 @@ export const ContentSection = styled(motion.section)`
 
   ${({ theme }) => theme.breakpoints.small`
     flex-direction: column;
+    align-items: center; /* Center-align content on small screens */
   `};
 
   ${({ theme }) => theme.breakpoints.tablet`
@@ -20,7 +21,6 @@ export const ContentSection = styled(motion.section)`
 `;
 
 export const TextWrapper = styled.div`
-  
   width: 50.333%;
 
   & h2 {
@@ -30,7 +30,7 @@ export const TextWrapper = styled.div`
     font-size: 2.625rem;
     line-height: 1;
     font-weight: 500;
-    color: Gray;
+    color: gray;
   }
 
   & p {
@@ -42,6 +42,7 @@ export const TextWrapper = styled.div`
   ${({ theme }) => theme.breakpoints.small`
     margin-left: 0;
     width: 100%;
+    text-align: center; /* Center-align text on small screens */
   `};
 
   ${({ theme }) => theme.breakpoints.tablet`
@@ -50,7 +51,6 @@ export const TextWrapper = styled.div`
       margin-bottom: 34px;
     }
   `};
-  
 `;
 
 export const ServicesWrapper = styled.div`
@@ -67,6 +67,7 @@ export const ServicesWrapper = styled.div`
     margin-left: 0;
     padding-left: 0;
     width: 100%;
+    text-align: center; /* Center-align text on small screens */
   `};
 `;
 
@@ -77,7 +78,7 @@ export const AccordionToggle = styled.button`
   display: block;
   padding: 27px 0 0 35px;
   line-height: 15px;
-  color: White;
+  color: white;
 
   &:hover:not([aria-expanded='true']) {
     color: white;
@@ -143,7 +144,7 @@ export const AccordionContent = styled(motion.div)`
   line-height: 1.0714285714;
   letter-spacing: 0.5px;
   overflow: hidden;
-  color: Gray;
+  color: gray;
 
   & p {
     margin: 6.1px 0 0;
