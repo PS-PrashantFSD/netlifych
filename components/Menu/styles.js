@@ -7,8 +7,8 @@ import DefaultSocialMedia from '../SocialMedia';
 import MenuButton from '../MenuButton';
 
 export const Backdrop = styled(DefaultBackdrop)`
-  background: ${({ theme }) => theme.colors.red};
-  color: ${({ theme }) => theme.background};
+  background:#302f2f;
+  color: white;
 `;
 
 export const Container = styled.div`
@@ -188,7 +188,7 @@ export const VideoReveal = styled(motion.div)`
   left: 0;
   will-change: width;
   transform: translateZ(0);
-  background: ${({ theme }) => theme.colors.red};
+  background: #302f2f;
 `;
 
 export const Video = styled(motion.video)`
@@ -209,13 +209,13 @@ export const CloseButton = styled(MenuButton)`
   margin: -20px;
 
   & span {
-    color: ${({ theme }) => theme.background};
+    color: white;
   }
 
   &::before,
   &::after {
     margin-top: 0;
-    background: ${({ theme }) => theme.background};
+    background: white;
   }
 
   &::before {

@@ -8,16 +8,41 @@ import animation2 from './../Lottie/nexar.json';
 import animation3 from './../Lottie/works.json';
 
 const CTASection = styled(motion.section)`
-  ${containerStyles};
+${containerStyles};
+  position: relative; /* Required for the overlay */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 100px;
-  background-color: #302f2f;
   padding: 100px 0;
   border-radius: 66px;
+  color: white; /* Text color for visibility on dark background */
+
+  background-image: url('rbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Overlay */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    border-radius: 66px; /* Match the border-radius */
+    z-index: 1;
+  }
+
+  /* Ensures text appears above the overlay */
+  * {
+    position: relative;
+    z-index: 2;
+  }
 `;
 
 const SectionsContainer = styled.div`
@@ -75,7 +100,7 @@ const CallToAction = () => {
       <SectionsContainer>
         <Section>
           <CTAHeading>nexAR</CTAHeading>
-          <LottieContainer onClick={() => window.location.href = "tel:8660449970"}>
+          <LottieContainer>
             <Lottie animationData={animation2} loop={true} />
           </LottieContainer>
           <CTADescription>
@@ -85,7 +110,7 @@ const CallToAction = () => {
         
         <Section>
           <CTAHeading>How</CTAHeading>
-          <LottieContainer onClick={() => window.location.href = "tel:8660449970"}>
+          <LottieContainer>
             <Lottie animationData={animation1} loop={true} />
           </LottieContainer>
           <CTADescription>
@@ -95,7 +120,7 @@ const CallToAction = () => {
         
         <Section>
           <CTAHeading>Works</CTAHeading>
-          <LottieContainer onClick={() => window.location.href = "tel:8660449970"}>
+          <LottieContainer >
             <Lottie animationData={animation3} loop={true} />
           </LottieContainer>
           <CTADescription>
@@ -103,8 +128,9 @@ const CallToAction = () => {
           </CTADescription>
         </Section>
       </SectionsContainer>
-      <p style={{ color: '#e6e3e3 ', margin: '19px' }}><strong>"Differentiate yourself from competition"</strong></p>
-      <h1 style={{ color: 'gray', fontSize: '80px' }}>go viral!</h1>
+      <p style={{ color: 'white ', margin: '19px' }}><strong>Differentiate </strong> yourself from competition</p>
+      <h1 style={{ color: 'white', fontSize: '80px' }}>Spark a Trend!</h1>
+      <p style={{ color: 'gray', margin: '19px' }}><strong>#nexAR #AugmentedReality #webAR</strong> Innovative Solution</p>
     </CTASection>
   );
 };

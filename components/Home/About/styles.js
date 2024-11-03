@@ -21,7 +21,7 @@ export const ContentSection = styled(motion.section)`
 
 export const TextWrapper = styled.div`
   
-  width: 58.333%;
+  width: 50.333%;
 
   & h2 {
     margin: 0;
@@ -55,7 +55,7 @@ export const TextWrapper = styled.div`
 
 export const ServicesWrapper = styled.div`
   margin-left: 8.333%;
-  width: 25%;
+  width: 45%;
   padding-top: 15px;
   padding-left: 30px;
 

@@ -39,11 +39,14 @@ const About = () => {
       <Nexar/>
       <ContentSection>
         <TextWrapper>
-          <h1 style={{fontSize: '99px'}}>About Us</h1>
+          <h1 style={{fontSize: '69px', marginBottom:'9px'}}>Luminexa</h1>
           <h2>
           Our mission is to revolutionize visual experiences, 
           bridging the gap between the physical and digital worlds.
           </h2>
+        </TextWrapper>
+        <ServicesWrapper>
+          <h1 style={{fontSize: '69px', marginBottom:'9px'}}> Innovative Digital Solutions</h1>
           <p>
           We specialize in a range of cutting-edge digital solutions. 
           Our services include advanced Augmented Reality software that transforms your 
@@ -51,29 +54,6 @@ const About = () => {
           platforms, <strong>innovative Image Tracking And Object detection</strong> system designed to streamline 
           processes through smart recognition.
           </p>
-        </TextWrapper>
-        <ServicesWrapper>
-          <h3>Services</h3>
-          {items.map(([item, services], itemIndex) => (
-            <React.Fragment key={item}>
-              <AccordionToggle
-                aria-expanded={itemIndex === selectedItem}
-                onClick={() => setSelectedItem(itemIndex)}
-                onMouseEnter={() => handleMouseEnter(itemIndex)}
-                onMouseLeave={() => handleMouseLeave(itemIndex)}
-              >
-                {item}
-              </AccordionToggle>
-              <AccordionContent
-                animate={{ height: itemIndex === selectedItem ? '100%' : '0' }}
-                transition={{ duration: 0.7, ease: [0, 0.7, 0.29, 0.97] }}
-              >
-                {services.map((service, serviceIndex) => (
-                  <p key={`${itemIndex}_${serviceIndex}`}>{service}</p>
-                ))}
-              </AccordionContent>
-            </React.Fragment>
-          ))}
         </ServicesWrapper>
       </ContentSection>
       <Call/>

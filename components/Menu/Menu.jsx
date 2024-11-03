@@ -131,7 +131,7 @@ const Menu = () => {
                         transition={transition}
                       >
                         <ArrowContainer>
-                          <Arrow fillColor={theme.background} />
+                          <Arrow fillColor='white' />
                         </ArrowContainer>
                         {route.title}
                       </Link>
